@@ -1,6 +1,9 @@
 body {
     font-family: var(--font-inter);
 }
+html {
+    scroll-behavior: smooth;
+}
 
 .image-2-icon {
     object-fit: cover;
