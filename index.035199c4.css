@@ -16,19 +16,10 @@ body {
     position: relative
 }
 
-.horizontal-container2,
-.low-fi-button {
+.horizontal-container2 {
     flex-direction: row;
     align-items: center;
     display: flex
-}
-
-.low-fi-button {
-    border-radius: var(--br-xs);
-    background-color: var(--color-steelblue);
-    padding: var(--padding-xs)var(--padding-5xl);
-    white-space: nowrap;
-    justify-content: center
 }
 
 .horizontal-container2 {
@@ -214,6 +205,7 @@ body {
     position: relative
 }
 
+.kontaktovat-sestru-emmy a:hover,
 button:hover {
     background-color: var(--color-deepskyblue)
 }
@@ -226,12 +218,16 @@ button:hover {
     overflow: hidden
 }
 
-.jak-emmy-pouvat {
+.jak-emmy-pouvat a {
     min-width: 116px;
     line-height: 18px;
     text-decoration: underline;
+    color: var(--color-black);
     display: inline-block;
     position: relative
+}
+.jak-emmy-pouvat a.white {
+    color: var(--color-white);   
 }
 
 .horizontal-container4 {
@@ -886,7 +882,6 @@ button:hover {
 }
 
 .lo-fi-ux-features-wrapper {
-    padding: 0 0 var(--padding-45xl);
     text-align: left;
     font-size: var(--font-size-13xl);
     color: var(--color-black);
@@ -1031,7 +1026,7 @@ button:hover {
 }
 
 .new-patients {
-    padding: 0 var(--padding-xl)var(--padding-45xl);
+    padding: 0 var(--padding-xl)var(--padding-10xs);
     box-sizing: border-box;
     text-align: left;
     font-size: var(--font-size-sm);
@@ -1193,14 +1188,6 @@ button {
     overflow: hidden
 }
 
-.jak-emmy-pouvat1 {
-    min-width: 116px;
-    line-height: 18px;
-    text-decoration: underline;
-    display: inline-block;
-    position: relative
-}
-
 .horizontal-container7 {
     justify-content: flex-start;
     align-items: center;
@@ -1245,7 +1232,6 @@ button {
 }
 
 .lo-fi-ux-features-container {
-    padding: 0 0 var(--padding-45xl);
     box-sizing: border-box;
     text-align: center;
     font-size: var(--font-size-sm);
@@ -3180,7 +3166,7 @@ button {
 
     .lo-fi-ux-features-container,
     .lo-fi-ux-features1 {
-        padding-bottom: var(--padding-23xl);
+        padding-bottom: var(--padding-10xs);
         box-sizing: border-box
     }
 
@@ -3236,7 +3222,7 @@ button {
 
     .lo-fi-ux-features,
     .lo-fi-ux-features-wrapper {
-        padding-bottom: var(--padding-23xl);
+        padding-bottom: var(--padding-10xs);
         box-sizing: border-box
     }
 
