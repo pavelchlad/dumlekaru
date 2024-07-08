@@ -16,23 +16,22 @@
             <div class="horizontal-container">
                 <div class="horizontal-container1"> <img class="image-2-icon" loading="lazy" alt
                         src="image-2@2x.75506223.png">
-
+                    <div class="horizontal-container3">
+                        <a class="vod" id="vodText" href="/">Úvod</a> 
+                        <a class="poskytovan-pe" id="poskytovanPeText" href="./dum-lekaru-poskytovana-pece.html">Poskytovaná péče</a> 
+                        <a class="domc-pe" href="./dum-lekaru-domaci-pece.html">Domácí péče</a> 
+                        <a class="vybaven">Vybavení</a>
+                        <div class="link-wrapper">
+                            <a class="cenk">Ceník</a><input class="mynauiexternal-link" type="checkbox">
+                        </div>
+                        <a class="vybaven" href="./#nas-tym">Náš tým</a>
+                        <a class="kontakt" href="./#kontakt">Kontakt</a>
+                    </div>
                     <div class="horizontal-container2">
                         <button class="low-fi-button1"
                             onclick="location.href='https://moje.sestraemmy.cz/-/dumlekaru';">
                             <div class="kontaktovat-sestru-emmy1"> Kontaktovat sestru EMMY </div>
                         </button>
-                    </div>
-                    <div class="horizontal-container3">
-                        <a class="vod">Úvod</a>
-                        <a class="poskytovan-pe" id="poskytovanPeText">Poskytovaná péče</a>
-                        <a class="domc-pe" id="domcPeText">Domácí péče</a>
-                        <a class="vybaven" href="#nas-tym">Náš tým</a>
-                        <a class="vybaven">Vybavení</a>
-                        <div class="link-wrapper">
-                            <a class="cenk">Ceník</a><input class="mynauiexternal-link" type="checkbox">
-                        </div>
-                        <a class="kontakt">Kontakt</a>
                     </div>
                 </div>
             </div>
@@ -211,10 +210,10 @@
                 </div>
             </div>
         </section>
-        <section class="about-content-wrapper">
+        <section class="about-content-wrapper" id="nas-tym">
             <div class="about-content" id="about-content">
                 <div class="about-header">
-                    <h1 class="header2" id="nas-tym">Tým zkušených lékařů</h1>
+                    <h1 class="header2">Tým zkušených lékařů</h1>
                 </div>
                 <div class="horizontal-container8">
                     <div class="about-description">
@@ -245,10 +244,13 @@
         <div class="slider-section-wrapper">
             <div class="arrow-wrapper" id="left-slider-arrow">
                 <button class="arrow" onclick="document.getElementById('slider-container').scrollLeft -= 400">
-                    << /button>
+                    &lt;
+                </button>
             </div>
             <div class="arrow-wrapper" id="right-slider-arrow">
-                <button class="arrow" onclick="document.getElementById('slider-container').scrollLeft += 400">></button>
+                <button class="arrow" onclick="document.getElementById('slider-container').scrollLeft += 400">
+                    &gt;
+                </button>
             </div>
 
             <section class="slider-container" id="slider-container">
@@ -322,7 +324,7 @@
                 <div id="right-helper" class="helper-div"></div>
             </section>
         </div>
-        <section class="content-container">
+        <section class="content-container" id="kontakt">
             <div class="content1">
                 <div class="header-wrapper">
                     <h1 class="header3">Kontakt</h1>
@@ -449,8 +451,7 @@
             </div>
         </section>
     </div>
-    <script>var e = document.getElementById("poskytovanPeText"); e && e.addEventListener("click", function (e) { window.location.href = "./dum-lekaru-poskytovana-pece.html" }); var t = document.getElementById("domcPeText"); t && t.addEventListener("click", function (e) { window.location.href = "./dum-lekaru-domaci-pece.html" });</script>
-
+    
     <script>
         function adjustHelperDivs() {
             const viewportWidth = window.innerWidth;

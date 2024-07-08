@@ -105,14 +105,10 @@ html {
 }
 
 .horizontal-container3 {
-    justify-content: flex-start;
-    gap: var(--gap-21xl);
-    color: var(--color-black);
-    width: 614px;
-    position: absolute;
-    top: calc(50% - 10px);
-    left: calc(50% - 306.5px);
-    margin: 0 !important
+	justify-content: center;
+	gap: var(--gap-21xl);
+	color: var(--color-black);
+	margin: 0 !important
 }
 
 .horizontal-container1 {
