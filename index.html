@@ -208,7 +208,7 @@
             </div>
         </section>
         <section class="about-content-wrapper">
-            <div class="about-content">
+            <div class="about-content" id="about-content">
                 <div class="about-header">
                     <h1 class="header2" id="nas-tym">Tým zkušených lékařů</h1>
                 </div>
@@ -239,70 +239,82 @@
             </div>
         </section>
         <div class="slider-section-wrapper">
-            <div class="arrow-wrapper" id="left-slider-arrow" onclick="document.getElementById('slider-container').scrollLeft -= 270">
-                <button class="arrow"><</button>
+            <div class="arrow-wrapper" id="left-slider-arrow">
+                <button class="arrow" onclick="document.getElementById('slider-container').scrollLeft -= 400"><</button>
             </div>
-            <div class="arrow-wrapper" id="right-slider-arrow" onclick="document.getElementById('slider-container').scrollLeft += 270">
-                <button class="arrow">></button>
+            <div class="arrow-wrapper" id="right-slider-arrow">
+                <button class="arrow" onclick="document.getElementById('slider-container').scrollLeft += 400">></button>
             </div>
 
             <section class="slider-container" id="slider-container">
+                <div id="left-helper" class="helper-div"></div>
+
                 <div class="team-member">
-                    <div class="team-member-name">MUDr. Tomas Jinek, Ph.D.</div>
+                    <div class="team-member-name">MUDr. Vladimír Maňásek</div>
                     <div class="team-member-description"> Doktor všeobecného lékařství </div>
-                    <img class="team-member-photo" alt="" src="tomas-jinek.png">
+                    <img class="team-member-photo" alt="" src="team/Mudr vladimir manasek3.png">
                     <button>
                         <div>Více informací</div>
                     </button>
                 </div>
                 <div class="team-member">
-                    <div class="team-member-name">MUDr. Tomas Jinek, Ph.D.</div>
+                    <div class="team-member-name">MUDr. Tomáš Jínek, Ph.D.</div>
                     <div class="team-member-description"> Doktor všeobecného lékařství </div>
-                    <img class="team-member-photo" alt="" src="tomas-jinek.png">
+                    <img class="team-member-photo" alt="" src="team/MUDr. Tomás Jínek.png">
                     <button>
                         <div>Více informací</div>
                     </button>
                 </div>
                 <div class="team-member">
-                    <div class="team-member-name">MUDr. Tomas Jinek, Ph.D.</div>
+                    <div class="team-member-name">MUDr. Josef Rybář</div>
                     <div class="team-member-description"> Doktor všeobecného lékařství </div>
-                    <img class="team-member-photo" alt="" src="tomas-jinek.png">
+                    <img class="team-member-photo" alt="" src="team/MUDr. Josef Rybár 3.png">
                     <button>
                         <div>Více informací</div>
                     </button>
                 </div>
                 <div class="team-member">
-                    <div class="team-member-name">MUDr. Tomas Jinek, Ph.D.</div>
-                    <div class="team-member-description"> Doktor všeobecného lékařství </div>
-                    <img class="team-member-photo" alt="" src="tomas-jinek.png">
+                    <div class="team-member-name">Lenka Bolomová</div>
+                    <div class="team-member-description"> Zdravotní sestra </div>
+                    <img class="team-member-photo" alt="" src="team/Lenka Bolomová2.png">
                     <button>
                         <div>Více informací</div>
                     </button>
                 </div>
                 <div class="team-member">
-                    <div class="team-member-name">MUDr. Tomas Jinek, Ph.D.</div>
-                    <div class="team-member-description"> Doktor všeobecného lékařství </div>
-                    <img class="team-member-photo" alt="" src="tomas-jinek.png">
+                    <div class="team-member-name">Martina Trávničková</div>
+                    <div class="team-member-description"> Zdravotní sestra </div>
+                    <img class="team-member-photo" alt="" src="team/Martina Trávnícková2.png">
                     <button>
                         <div>Více informací</div>
                     </button>
                 </div>
                 <div class="team-member">
-                    <div class="team-member-name">MUDr. Tomas Jinek, Ph.D.</div>
-                    <div class="team-member-description"> Doktor všeobecného lékařství </div>
-                    <img class="team-member-photo" alt="" src="tomas-jinek.png">
+                    <div class="team-member-name">Blažena Vránová</div>
+                    <div class="team-member-description"> Zdravotní sestra </div>
+                    <img class="team-member-photo" alt="" src="team/Blazena Vránová2.png">
                     <button>
                         <div>Více informací</div>
                     </button>
                 </div>
                 <div class="team-member">
-                    <div class="team-member-name">MUDr. Tomas Jinek, Ph.D.</div>
-                    <div class="team-member-description"> Doktor všeobecného lékařství </div>
-                    <img class="team-member-photo" alt="" src="tomas-jinek.png">
+                    <div class="team-member-name">Hana Labajová</div>
+                    <div class="team-member-description"> Zdravotní sestra </div>
+                    <img class="team-member-photo" alt="" src="team/Hana Labajova.png">
                     <button>
                         <div>Více informací</div>
                     </button>
                 </div>
+                <div class="team-member">
+                    <div class="team-member-name">Vendula Kochová</div>
+                    <div class="team-member-description"> Recepční </div>
+                    <img class="team-member-photo" alt="" src="team/Vendula Kochová3.png">
+                    <button>
+                        <div>Více informací</div>
+                    </button>
+                </div>
+                
+                <div id="right-helper" class="helper-div"></div>
             </section>
         </div>
         <section class="content-container">
@@ -509,6 +521,44 @@
         </section>
     </div>
     <script>var e = document.getElementById("poskytovanPeText"); e && e.addEventListener("click", function (e) { window.location.href = "./dum-lekaru-poskytovana-pece.html" }); var t = document.getElementById("domcPeText"); t && t.addEventListener("click", function (e) { window.location.href = "./dum-lekaru-domaci-pece.html" });</script>
+
+    <script>
+        function adjustHelperDivs() {
+            const viewportWidth = window.innerWidth;
+            const container = document.getElementById('about-content');
+            const containerWidth = container.offsetWidth;
+            const helperWidth = (viewportWidth - containerWidth) / 2 - 24;
+    
+            document.getElementById('left-helper').style.minWidth = helperWidth + 'px';
+            document.getElementById('right-helper').style.minWidth = helperWidth + 'px';
+        }
+
+        function updateArrows() {
+            const container = document.getElementById('slider-container');
+            const prevArrow = document.getElementById('left-slider-arrow');
+            const nextArrow = document.getElementById('right-slider-arrow');
+
+            if (container.scrollLeft === 0) {
+                prevArrow.classList.add('hidden');
+            } else {
+                prevArrow.classList.remove('hidden');
+            }
+
+            if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
+                nextArrow.classList.add('hidden');
+            } else {
+                nextArrow.classList.remove('hidden');
+            }
+        }
+    
+        window.onload = function() {
+            adjustHelperDivs();
+            updateArrows();
+        };
+    
+        window.onresize = adjustHelperDivs;
+        document.getElementById('slider-container').onscroll = updateArrows;
+    </script>
 </body>
 
 </html>

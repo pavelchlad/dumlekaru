@@ -3047,7 +3047,7 @@ button {
     scroll-behavior: smooth;
     width: 100%;
     overflow: hidden;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .arrow-wrapper {
@@ -3058,6 +3058,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.arrow-wrapper.hidden {
+    display: none;
 }
 
 #left-slider-arrow {
@@ -3072,7 +3076,7 @@ button {
 
 .team-member {
     position: relative;
-    height: 400px;
+    height: 360px;
     width: 260px;
     min-width: 260px;
     display: flex;
@@ -3086,6 +3090,7 @@ button {
     text-align: center;
     color: black;
     transition: all 0.3s ease-in-out;
+    overflow: hidden;
 }
 
 .team-member-name {
@@ -3101,8 +3106,8 @@ button {
 .team-member-photo {
     position: absolute;
     bottom: 0;
-    right: 0;
-    width: 80%;
+    right: -15%;
+    width: 95%;
     filter: drop-shadow(0px 4px 20px #00000025);
     z-index: 0;
 }
