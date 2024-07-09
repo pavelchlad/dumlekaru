@@ -2226,7 +2226,14 @@ button {
     scroll-behavior: smooth;
     width: 100%;
     overflow: hidden;
+    overflow-x: scroll;
     justify-content: flex-start;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.slider-container::-webkit-scrollbar { 
+    display: none;
 }
 
 .arrow-wrapper {
@@ -2285,7 +2292,8 @@ button {
 .team-member-photo {
     position: absolute;
     bottom: 0;
-    right: -15%;
+    right: 50%;
+    transform: translateX(50%);
     width: 95%;
     filter: drop-shadow(0px 4px 20px #00000025);
     z-index: 0;
