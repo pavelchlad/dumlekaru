@@ -1,10 +1,3 @@
-body {
-    font-family: var(--font-inter);
-}
-html {
-    scroll-behavior: smooth;
-}
-
 .image-2-icon {
     object-fit: cover;
     width: 113px;
@@ -832,13 +825,6 @@ button:hover {
     display: flex
 }
 
-.features-base5,
-.row,
-.text-container5 {
-    justify-content: flex-start;
-    align-items: flex-start
-}
-
 .features-base5 {
     box-shadow: var(--shadow-xsm);
     border-radius: var(--br-xl);
@@ -852,15 +838,6 @@ button:hover {
     min-width: 365px;
     max-width: 100%;
     display: flex
-}
-
-.row {
-    padding: 0 var(--padding-13xl);
-    font-size: var(--font-size-base);
-    flex-flow: wrap;
-    gap: 32px 30px;
-    width: 1280px;
-    min-height: 446px
 }
 
 .lo-fi-ux-features,
@@ -2321,7 +2298,6 @@ button {
 .team-member:hover {
     border-color: var(--color-steelblue);
 }
-
 
 
 @media screen and (width<=1200px) {
