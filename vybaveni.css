@@ -1,0 +1,24 @@
+.vybaveni-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--padding-xl);
+    padding: var(--padding-45xl) var(--padding-xl);
+}
+
+.vybaveni-item {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-xl);
+}
+
+.vybaveni-img {
+    width: 240px;
+    height: 160px;
+    border-radius: 20px;
+    border: 1px solid #E6E9EC;
+    object-fit: contain;
+}
+
+.vybaveni-item p {
+    margin: 0;
+}

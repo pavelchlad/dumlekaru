@@ -45,7 +45,7 @@
 }
 
 .poskytujeme-standardn-lebn {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-base);
     align-self: stretch;
     line-height: 20px;
     position: relative
@@ -76,8 +76,9 @@
     display: inline-block;
     position: relative
 }
+
 .jak-emmy-pouvat a.white {
-    color: var(--color-white);   
+    color: var(--color-white);
 }
 
 .horizontal-container4 {
@@ -1845,7 +1846,7 @@
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .gallery img {
@@ -1905,7 +1906,7 @@
     scrollbar-width: none;
 }
 
-.slider-container::-webkit-scrollbar { 
+.slider-container::-webkit-scrollbar {
     display: none;
 }
 

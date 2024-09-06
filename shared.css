@@ -1,6 +1,7 @@
 body {
     font-family: var(--font-inter);
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -28,19 +29,15 @@ html {
 
 .row,
 .subpage-intro {
+    margin: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
     padding: 0 var(--padding-13xl);
     font-size: var(--font-size-base);
     flex-flow: wrap;
     gap: 32px 30px;
     width: 1280px;
-}
-
-
-.subpage-intro {
-    margin: auto;
-    max-width: 100%;
-    box-sizing: border-box;
-    display: flex;
 }
 
 .subpage-intro .background-overlay {
@@ -52,7 +49,8 @@ html {
     gap: 20px;
 }
 
-.subpage-intro h1, .subpage-intro p {
+.subpage-intro h1,
+.subpage-intro p {
     position: relative;
     z-index: 10;
     color: var(--color-white);
@@ -67,56 +65,51 @@ html {
     line-height: 44px;
 }
 
-.subpage-intro p {
-    font-size: var(--font-size-sm);
-    line-height: 20px;
-}
-
 .background-icon2,
 .overlay2 {
-	position: absolute;
-	margin: 0 !important
+    position: absolute;
+    margin: 0 !important
 }
 
 .background-icon2 {
-	object-fit: cover;
-	width: 100%;
-	min-height: 100%;
+    object-fit: cover;
+    width: 100%;
+    min-height: 100%;
 }
 
 .background-overlay {
-	border-radius: var(--br-xl);
-	padding: var(--padding-45xl)var(--padding-xl);
-	flex-shrink: 0;
-	width: 100%;
-	min-height: 300px;
-	position: relative;
-	overflow: hidden
+    border-radius: var(--br-xl);
+    padding: var(--padding-45xl)var(--padding-xl);
+    flex-shrink: 0;
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden
 }
 
 .overlay2 {
-	background-color: var(--color-gray-100);
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	right: 0
+    background-color: var(--color-gray-100);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0
 }
 
 .background-overlay,
 .content-description,
 .content3 {
-	box-sizing: border-box;
-	align-items: flex-start;
-	max-width: 100%;
-	display: flex
+    box-sizing: border-box;
+    align-items: flex-start;
+    max-width: 100%;
+    display: flex
 }
 
 .background-overlay,
 .content3 {
-	flex-direction: row;
-	justify-content: center
+    flex-direction: row;
+    justify-content: center
 }
 
 .container {
@@ -197,10 +190,10 @@ button:hover {
 }
 
 .horizontal-container3 {
-	justify-content: center;
-	gap: var(--gap-21xl);
-	color: var(--color-black);
-	margin: 0 !important
+    justify-content: center;
+    gap: var(--gap-21xl);
+    color: var(--color-black);
+    margin: 0 !important
 }
 
 .image-2-icon {
@@ -260,15 +253,6 @@ button:hover {
 
 .cenk {
     min-width: 38px
-}
-
-.mynauiexternal-link {
-    flex-shrink: 0;
-    width: 16px;
-    height: 16px;
-    margin: 0;
-    position: relative;
-    overflow: hidden
 }
 
 .link-wrapper {
