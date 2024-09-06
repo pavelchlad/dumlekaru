@@ -614,7 +614,7 @@ button:hover {
 	flex-flow: wrap;
 	justify-content: flex-start;
 	align-self: stretch;
-	gap: 24px 22px;
+	gap: 40px 22px;
 	min-height: 112px
 }
 
@@ -788,25 +788,6 @@ button:hover {
 	align-self: stretch;
 	line-height: 20px;
 	position: relative
-}
-
-.logo-section2,
-.social-media-section2 {
-	justify-content: flex-start;
-	align-items: flex-start;
-	gap: var(--gap-base);
-	flex-direction: column;
-	display: flex
-}
-
-.social-media-section2 {
-	align-self: stretch
-}
-
-.logo-section2 {
-	padding: 0 var(--padding-65xl)0 0;
-	box-sizing: border-box;
-	width: 247px
 }
 
 .icon-placeholder-fill40 {
@@ -1635,11 +1616,6 @@ button:hover {
 	flex-direction: row;
 	width: 1216px;
 	max-width: 100%
-}
-
-.vechna-prva-vyhrazena2 {
-	line-height: 18px;
-	position: relative
 }
 
 .horizontal-container24 {

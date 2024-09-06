@@ -1764,25 +1764,6 @@ button:hover {
 	position: relative
 }
 
-.logo-section1,
-.social-media-section1 {
-	justify-content: flex-start;
-	align-items: flex-start;
-	gap: var(--gap-base);
-	flex-direction: column;
-	display: flex
-}
-
-.social-media-section1 {
-	align-self: stretch
-}
-
-.logo-section1 {
-	padding: 0 var(--padding-65xl)0 0;
-	box-sizing: border-box;
-	width: 247px
-}
-
 .icon-placeholder-fill20 {
 	flex-shrink: 0;
 	width: 16px;
@@ -2611,11 +2592,6 @@ button:hover {
 	max-width: 100%
 }
 
-.vechna-prva-vyhrazena1 {
-	line-height: 18px;
-	position: relative
-}
-
 .horizontal-container19 {
 	padding: 0 var(--padding-xl);
 	font-size: var(--font-size-xs);
@@ -2626,7 +2602,6 @@ button:hover {
 }
 
 .container2,
-.dum-lekaru-poskytovana-pece,
 .horizontal-container19,
 .lo-fi-ux-footer1 {
 	box-sizing: border-box;
@@ -2643,7 +2618,6 @@ button:hover {
 	max-width: 100%
 }
 
-.dum-lekaru-poskytovana-pece,
 .lo-fi-ux-footer1 {
 	background-color: var(--color-white)
 }
@@ -2657,16 +2631,6 @@ button:hover {
 	align-self: stretch;
 	align-items: center;
 	max-width: 100%
-}
-
-.dum-lekaru-poskytovana-pece {
-	padding: 0 0 var(--padding-45xl);
-	letter-spacing: normal;
-	align-items: flex-start;
-	width: 100%;
-	line-height: normal;
-	position: relative;
-	overflow: hidden
 }
 
 @media screen and (width<=1200px) {
