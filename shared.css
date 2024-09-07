@@ -332,9 +332,7 @@ button:hover {
     gap: var(--gap-base);
     flex-direction: column;
     display: flex;
-    padding: 0 var(--padding-65xl)0 0;
     box-sizing: border-box;
-    width: 247px;
 }
 
 .image-2-icon1 {
@@ -424,3 +422,54 @@ button:hover {
 }
 
 /* END FOOTER */
+
+@media screen and (width<=1280px) {
+
+    .horizontal-container {
+        padding: 0;
+    }
+
+    .horizontal-container2,
+    .horizontal-container3 {
+        display: none;
+    }
+
+    .low-fi-page-header {
+        padding: var(--padding-base);
+    }
+
+    .row {
+        gap: var(--padding-base);
+    }
+
+    .lo-fi-ux-footer .container1 {
+        flex-wrap: wrap;
+    }
+
+    .footer-links-wrapper,
+    .logo-section {
+        flex-basis: 200px;
+    }
+}
+
+@media screen and (width<=750px) {
+    .row {
+        padding: var(--padding-base)
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lo-fi-ux-footer {
+        padding: var(--padding-base);
+    }
+
+    .lo-fi-ux-footer .container {
+        padding: 0;
+    }
+
+    .social-media-section {
+        gap: 0;
+    }
+}
