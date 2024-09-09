@@ -1,8 +1,8 @@
 .vybaveni-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 25em), 1fr));
     grid-gap: var(--padding-xl);
-    padding: var(--padding-45xl) var(--padding-xl);
+    padding-block: var(--padding-45xl);
 }
 
 .vybaveni-item {
@@ -21,4 +21,20 @@
 
 .vybaveni-item p {
     margin: 0;
+}
+
+@media screen and (width<=750px) {
+    .vybaveni-list {
+        padding-block: var(--padding-base);
+        gap: var(--gap-9xs)
+    }
+
+    .vybaveni-item {
+        padding-inline: 0;
+    }
+
+    .vybaveni-img {
+        width: 200px;
+        height: 133px;
+    }
 }

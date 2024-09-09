@@ -1663,5 +1663,29 @@ button:hover {
 	overflow: hidden
 }
 
+@media screen and (width<=750px) {
+	.lo-fi-ux-features2 {
+		padding-block: var(--padding-23xl);
+		gap: var(--gap-13xl)
+	}
+
+	.row6,
+	.row7,
+	.row8 {
+		gap: var(--gap-5xs);
+	}
+
+	.row9 {
+		padding: var(--padding-base);
+	}
+
+	.contact-info {
+		gap: var(--gap-xl)
+	}
+
+	.prosenior-nov-jin-container {
+		display: none;
+	}
+}
 
 /*# sourceMappingURL=dum-lekaru-domaci-pece.892f6f33.css.map */

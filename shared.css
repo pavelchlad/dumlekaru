@@ -453,6 +453,28 @@ button:hover {
 }
 
 @media screen and (width<=750px) {
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+        text-align: center;
+    }
+
+    .subpage-intro {
+        padding: 0 var(--padding-base)
+    }
+
+    .overlay-parent {
+        gap: 60px;
+        padding-top: var(--padding-61xl);
+    }
+
+    .background-overlay {
+        padding: var(--padding-23xl) var(--padding-base);
+    }
+
     .row {
         padding: var(--padding-base)
     }
@@ -472,4 +494,10 @@ button:hover {
     .social-media-section {
         gap: 0;
     }
+
+    .footer-links-wrapper {
+        flex-basis: 160px;
+    }
+
+
 }
