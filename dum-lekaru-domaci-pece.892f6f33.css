@@ -7,33 +7,33 @@
 }
 
 .kontaktovat-sestru-emmy1 {
-    font-size: var(--font-size-sm);
-    font-weight: 500;
-    font-family: var(--font-inter);
-    color: var(--color-white);
-    text-align: left;
-    position: relative
+	font-size: var(--font-size-sm);
+	font-weight: 500;
+	font-family: var(--font-inter);
+	color: var(--color-white);
+	text-align: left;
+	position: relative
 }
 
 button {
-    cursor: pointer;
-    padding: var(--padding-xs)var(--padding-5xl);
-    background-color: var(--color-steelblue);
-    border-radius: var(--br-xs);
-    color: white;
-    white-space: nowrap;
-    border: 0;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    display: flex
+	cursor: pointer;
+	padding: var(--padding-xs)var(--padding-5xl);
+	background-color: var(--color-steelblue);
+	border-radius: var(--br-xs);
+	color: white;
+	white-space: nowrap;
+	border: 0;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	display: flex
 }
 
 button:hover {
-    background-color: var(--color-deepskyblue)
+	background-color: var(--color-deepskyblue)
 }
 
-.horizontal-container22{
+.horizontal-container22 {
 	flex-direction: row;
 	align-items: center;
 	display: flex
@@ -44,61 +44,52 @@ button:hover {
 }
 
 .vod {
-    color: inherit;
-    min-width: 35px;
-    line-height: 20px;
-    text-decoration: none;
-    display: inline-block;
-    position: relative
+	color: inherit;
+	min-width: 35px;
+	line-height: 20px;
+	text-decoration: none;
+	display: inline-block;
+	position: relative
 }
 
 .poskytovan-pe {
-    white-space: nowrap;
-    cursor: pointer;
-    min-width: 122px
+	white-space: nowrap;
+	cursor: pointer;
+	min-width: 122px
 }
 
 .cenk,
 .domc-pe,
 .poskytovan-pe,
 .vybaven {
-    color: inherit;
-    line-height: 20px;
-    text-decoration: none;
-    display: inline-block;
-    position: relative
+	color: inherit;
+	line-height: 20px;
+	text-decoration: none;
+	display: inline-block;
+	position: relative
 }
 
 .domc-pe {
-    white-space: nowrap;
-    cursor: pointer;
-    min-width: 87px
+	white-space: nowrap;
+	cursor: pointer;
+	min-width: 87px
 }
 
 .cenk,
 .vybaven {
-    min-width: 61px
+	min-width: 61px
 }
 
 .cenk {
-    min-width: 38px
-}
-
-.mynauiexternal-link {
-    flex-shrink: 0;
-    width: 16px;
-    height: 16px;
-    margin: 0;
-    position: relative;
-    overflow: hidden
+	min-width: 38px
 }
 
 .link-wrapper {
-    justify-content: flex-start;
-    align-items: center;
-    gap: var(--gap-9xs);
-    flex-direction: row;
-    display: flex
+	justify-content: flex-start;
+	align-items: center;
+	gap: var(--gap-9xs);
+	flex-direction: row;
+	display: flex
 }
 
 .kontakt {
@@ -614,7 +605,7 @@ button:hover {
 	flex-flow: wrap;
 	justify-content: flex-start;
 	align-self: stretch;
-	gap: 24px 22px;
+	gap: 40px 22px;
 	min-height: 112px
 }
 
@@ -788,25 +779,6 @@ button:hover {
 	align-self: stretch;
 	line-height: 20px;
 	position: relative
-}
-
-.logo-section2,
-.social-media-section2 {
-	justify-content: flex-start;
-	align-items: flex-start;
-	gap: var(--gap-base);
-	flex-direction: column;
-	display: flex
-}
-
-.social-media-section2 {
-	align-self: stretch
-}
-
-.logo-section2 {
-	padding: 0 var(--padding-65xl)0 0;
-	box-sizing: border-box;
-	width: 247px
 }
 
 .icon-placeholder-fill40 {
@@ -1637,11 +1609,6 @@ button:hover {
 	max-width: 100%
 }
 
-.vechna-prva-vyhrazena2 {
-	line-height: 18px;
-	position: relative
-}
-
 .horizontal-container24 {
 	padding: 0 var(--padding-xl);
 	box-sizing: border-box;
@@ -1696,88 +1663,28 @@ button:hover {
 	overflow: hidden
 }
 
-@media screen and (width<=825px) {
-	.low-fi-page-header2 {
-		padding-left: var(--padding-21xl);
-		padding-right: var(--padding-21xl);
-		box-sizing: border-box
-	}
-
-	.header5,
-	.header6,
-	.header7 {
-		font-size: var(--font-size-7xl);
-		line-height: 30px
-	}
-
+@media screen and (width<=750px) {
 	.lo-fi-ux-features2 {
-		padding-top: var(--padding-23xl);
-		padding-bottom: var(--padding-23xl);
-		box-sizing: border-box
-	}
-
-	.links,
-	.lo-fi-ux-footer2 {
-		padding-left: var(--padding-37xl);
-		padding-right: var(--padding-37xl);
-		box-sizing: border-box
-	}
-
-	.lo-fi-ux-footer2 {
-		padding-left: var(--padding-21xl);
-		padding-right: var(--padding-21xl)
-	}
-}
-
-@media screen and (width<=675px) {
-	.container5 {
-		flex-wrap: wrap;
-		justify-content: center
-	}
-
-	.container4 {
+		padding-block: var(--padding-23xl);
 		gap: var(--gap-13xl)
 	}
-}
 
-@media screen and (width<=450px) {
-	.header5,
-	.header6,
-	.header7 {
-		font-size: var(--font-size-lgi);
-		line-height: 23px
-	}
-
-	.lo-fi-ux-features2 {
-		gap: var(--gap-5xl);
-		padding-top: var(--padding-8xl);
-		padding-bottom: var(--padding-8xl)
-	}
-
-	.links,
-	.lo-fi-ux-features2,
-	.row9 {
-		box-sizing: border-box
+	.row6,
+	.row7,
+	.row8 {
+		gap: var(--gap-5xs);
 	}
 
 	.row9 {
-		padding-top: var(--padding-2xl);
-		padding-bottom: var(--padding-2xl)
+		padding: var(--padding-base);
 	}
 
-	.links {
-		padding-left: var(--padding-xl);
-		padding-right: var(--padding-xl)
+	.contact-info {
+		gap: var(--gap-xl)
 	}
 
-	.container4 {
-		gap: var(--gap-base)
-	}
-
-	.lo-fi-ux-footer2 {
-		padding-top: var(--padding-23xl);
-		padding-bottom: var(--padding-2xl);
-		box-sizing: border-box
+	.prosenior-nov-jin-container {
+		display: none;
 	}
 }
 
