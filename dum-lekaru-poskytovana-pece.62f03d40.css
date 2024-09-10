@@ -245,7 +245,7 @@ button:hover {
 	align-self: stretch
 }
 
-.healthiconsblood-a-p-outline {
+.service-feature-icon {
 	flex-shrink: 0;
 	width: 24px;
 	height: 24px;
@@ -253,7 +253,7 @@ button:hover {
 	overflow: hidden
 }
 
-.low-fi-avatar6 {
+.service-list-icon-container {
 	border-radius: var(--br-xs);
 	background-color: var(--color-white);
 	flex-direction: row;
@@ -264,13 +264,6 @@ button:hover {
 	display: flex
 }
 
-.odbry {
-	align-self: stretch;
-	font-weight: 500;
-	position: relative
-}
-
-.features-base6,
 .service-descriptions {
 	justify-content: flex-start;
 	align-items: flex-start;
@@ -278,22 +271,32 @@ button:hover {
 }
 
 .service-descriptions {
-	padding: var(--padding-2xs-5)0 0;
 	box-sizing: border-box;
 	flex-direction: column;
 	flex: 1;
-	min-width: 177px
+	font-weight: 500;
 }
 
-.features-base6 {
+.service-list-feature {
+	display: flex;
 	box-shadow: var(--shadow-xsm);
 	border-radius: var(--br-base);
 	background-color: var(--neutral-50);
 	border: 1px solid var(--neutral-600);
 	padding: var(--padding-7xs)var(--padding-mini);
 	align-self: stretch;
-	gap: var(--gap-base);
-	flex-direction: row
+	gap: var(--gap-5xs);
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.service-list-feature.active {
+	border: 1px solid var(--color-red);
+}
+
+.service-list-feature.active img {
+	filter: invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(117%);
 }
 
 .tablerlist-check-icon {
@@ -437,17 +440,6 @@ button:hover {
 	flex-direction: column;
 	flex: 1;
 	min-width: 177px
-}
-
-.features-base9 {
-	box-shadow: var(--shadow-xsm);
-	border-radius: var(--br-base);
-	background-color: var(--neutral-50);
-	border: 1px solid var(--color-red);
-	padding: var(--padding-7xs)var(--padding-mini);
-	align-self: stretch;
-	gap: var(--gap-base);
-	flex-direction: row
 }
 
 .riscissors-cut-line-icon {
@@ -760,9 +752,7 @@ button:hover {
 .list1 {
 	gap: var(--gap-5xs);
 	flex-direction: column;
-	width: 360px;
-	min-width: 360px;
-	max-width: 100%
+	flex-basis: 360px;
 }
 
 .doporuujeme-se-objednat {
@@ -1053,7 +1043,7 @@ button:hover {
 .row5 {
 	border-radius: var(--br-xl);
 	background-color: var(--color-white);
-	padding: var(--padding-base)var(--padding-xl)var(--padding-base)var(--padding-13xl);
+	padding: var(--padding-base);
 	box-sizing: border-box;
 	align-self: stretch;
 	overflow: hidden
@@ -1079,19 +1069,19 @@ button:hover {
 	gap: var(--gap-base);
 	flex-direction: column;
 	flex: 1;
-	min-width: 536px;
+	width: 100%;
 	overflow: hidden
 }
 
-.services,
-.services-list {
+.services {
 	flex-direction: row;
-	justify-content: center
+	justify-content: center;
 }
 
 .services-list {
 	gap: var(--gap-13xl);
-	width: 1216px
+	width: 1216px;
+	justify-content: flex-start;
 }
 
 .services {
@@ -1180,8 +1170,7 @@ button:hover {
 	gap: var(--gap-3xs);
 	flex-direction: column;
 	flex: 1;
-	min-width: 491px;
-	max-width: 100%;
+	flex-basis: 491px;
 	display: flex
 }
 
@@ -1204,7 +1193,8 @@ button:hover {
 	align-items: center;
 	gap: var(--gap-3xs);
 	flex-direction: row;
-	display: flex
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .line-div,
@@ -1262,10 +1252,6 @@ button:hover {
 .pijte-dostaten-mnostv-teku,
 .vyvarujte-se-zven-fyzick1 {
 	margin-bottom: 10px
-}
-
-.httpswwwyoutubecomwatch {
-	text-decoration: underline
 }
 
 .pi-bolestech-v-krku-kloktejte,
@@ -1326,18 +1312,6 @@ button:hover {
 	display: inline-block;
 	top: 424px;
 	left: 134px
-}
-
-.horizontal-container17 {
-	border-radius: var(--br-xl);
-	justify-content: flex-end;
-	align-self: stretch;
-	align-items: center;
-	gap: var(--gap-3xs);
-	flex-direction: row;
-	max-width: 100%;
-	display: flex;
-	position: relative
 }
 
 .live-wrapper-child1,
@@ -1428,15 +1402,6 @@ button:hover {
 	position: relative
 }
 
-.horizontal-container18 {
-	justify-content: flex-end;
-	align-self: stretch;
-	align-items: center;
-	gap: var(--gap-3xs);
-	flex-direction: row;
-	display: flex
-}
-
 .live-wrapper-child2,
 .live-wrapper7 {
 	box-sizing: border-box;
@@ -1493,7 +1458,7 @@ button:hover {
 	font-weight: 500
 }
 
-.features-base16 {
+.other-features {
 	box-shadow: var(--shadow-xsm);
 	border-radius: var(--br-xl);
 	background-color: var(--color-white);
@@ -1505,8 +1470,8 @@ button:hover {
 	gap: var(--gap-5xl);
 	flex-direction: column;
 	flex: 1;
-	min-width: 350px;
-	max-width: 100%;
+	flex-basis: 290px;
+	max-width: 390px;
 	height: 210px;
 	display: flex
 }
@@ -2622,6 +2587,56 @@ button:hover {
 	align-self: stretch;
 	align-items: center;
 	max-width: 100%
+}
+
+.image-video {
+	position: relative;
+}
+
+.play-video-icon {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50px;
+}
+
+.image-video:hover .play-video-icon {
+	opacity: 0.6;
+}
+
+@media screen and (width<=1000px) {
+	.services-list {
+		flex-direction: column;
+	}
+}
+
+@media screen and (width<=750px) {
+	.services {
+		margin-top: var(--padding-23xl)
+	}
+
+	.row4 {
+		padding: var(--padding-5xl) var(--padding-base);
+	}
+
+	.tips-container {
+		gap: var(--gap-5xs)
+	}
+
+	.tips-content {
+		padding: var(--padding-base) 0;
+	}
+
+	.other-features {
+		padding: var(--padding-base);
+		gap: var(--gap-5xs);
+	}
+
+	.additional-tips {
+		gap: var(--gap-base);
+	}
 }
 
 /*# sourceMappingURL=dum-lekaru-poskytovana-pece.62f03d40.css.map */

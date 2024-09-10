@@ -1858,7 +1858,7 @@
 
 @media screen and (width<=750px) {
     .horizontal-container5 {
-        padding: var(--padding-base);
+        padding: 0;
         justify-content: space-evenly;
         gap: 0;
     }
