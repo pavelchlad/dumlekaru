@@ -1902,6 +1902,7 @@
 
     .google-maps-widget {
         padding: 0;
+        min-height: 450px;
     }
 
     .image-gallery {
