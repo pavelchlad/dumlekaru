@@ -1,3 +1,4 @@
 {
-	"cSpell.language": "en,cs"
+	"cSpell.language": "en,cs",
+	"livePreview.defaultPreviewPath": "/index.html"
 }
