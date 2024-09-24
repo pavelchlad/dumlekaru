@@ -7,42 +7,18 @@
 		<link rel="stylesheet" href="assets/css/root.css">
 		<link rel="stylesheet" href="assets/css/dum-lekaru-poskytovana-pece.62f03d40.css">
 		<link rel="stylesheet" href="assets/css/shared.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap">
 		<title>Poskytovaná péče - Naše služby | Dům Lékařů</title>
 		<meta name="description"
 			content="Naše zdravotnické zařízení nabízí široké spektrum služeb přizpůsobených potřebám našich pacientů. Na této stránce najdete všechny důležité informace o poskytované péči, abyste věděli, jak probíhá léčba u nás.">
+		<script src="assets/js/shared.js"></script>
 	</head>
 
 	<body>
 		<div class="main-page-content">
-			<header class="low-fi-page-header">
-				<div class="horizontal-container">
-					<div class="horizontal-container1"> <a href="/"><img class="image-2-icon"
-								loading="lazy" alt
-								src="assets/img/image-2@2x.75506223.png"></a>
-						<div class="horizontal-container3">
-							<a class="vod" id="vodText" href="/">Úvod</a>
-							<a class="poskytovan-pe" id="poskytovanPeText"
-								href="./dum-lekaru-poskytovana-pece.html">Poskytovaná péče</a>
-							<a class="domc-pe" href="./dum-lekaru-domaci-pece.html">Domácí péče</a>
-							<a class="vybaven" href="./vybaveni.html">Vybavení</a>
-							<div class="link-wrapper">
-								<a class="cenk" href="./cenik.html">Ceník</a>
-							</div>
-							<a class="vybaven" href="./#nas-tym">Náš tým</a>
-							<a class="kontakt" href="./#kontakt">Kontakt</a>
-						</div>
-						<div class="horizontal-container2">
-							<button class="low-fi-button1"
-								onclick="window.open('https://moje.sestraemmy.cz/-/dumlekaru','_blank');"
-								type="button">
-								<div class="kontaktovat-sestru-emmy1"> Kontaktovat sestru EMMY </div>
-							</button>
-						</div>
-					</div>
-				</div>
-			</header>
+			<header class="low-fi-page-header" w3-include-html="header.html"></header>  
 			<section class="subpage-intro">
 				<div class="background-overlay"> <img class="background-icon2" alt
 						src="assets/img/ekg-pracoviste-a-spirometrie@2x.f05d3789.png">
@@ -505,6 +481,9 @@
 			</footer>
 		</div>
 		<script>var e = document.getElementById("image2"); e && e.addEventListener("click", function (e) { window.location.href = "./main-page-content.html" }); var t = document.getElementById("vodText"); t && t.addEventListener("click", function (e) { window.location.href = "./main-page-content.html" }); var o = document.getElementById("poskytovanPeText"); o && o.addEventListener("click", function () { var e = document.querySelector("[data-scroll-to='rowContainer']"); e && e.scrollIntoView({ block: "start", behavior: "smooth" }) }); var n = document.getElementById("domcPeText"); n && n.addEventListener("click", function (e) { window.location.href = "./dum-lekaru-domaci-pece.html" });</script>
+		<script>              
+            includeHTML();   
+        </script>    
 	</body>
 
 </html>

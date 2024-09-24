@@ -13,62 +13,12 @@
         <title>Úvod | Dům Lékařů</title>
         <meta name="description"
             content="Poskytujeme standardní léčebně-preventivní péči praktického lékaře. Nabízíme též nadstandardní placenou péči a službu nehrazené zdravotními pojišťovnami (posudková a závodní péče)">
+        <script src="assets/js/shared.js"></script>
     </head>
 
     <body>
         <div class="main-page-content">
-            <header class="low-fi-page-header">
-                <div class="horizontal-container">
-                    <div class="horizontal-container1"> <img
-                            class="image-2-icon" loading="lazy" alt
-                            src="assets/img/image-2@2x.75506223.png">
-                        <div class="topnav" id="myTopnav">
-                            <a id="vodText" href="/">Úvod</a>
-                            <a id="poskytovanPeText" href="./dum-lekaru-poskytovana-pece.html">Poskytovaná
-                                péče</a>
-                            <a href="./dum-lekaru-domaci-pece.html">Domácí péče</a>
-                            <a href="./vybaveni.html">Vybavení</a>
-                            <a class="cenk" href="./cenik.html">Ceník</a>
-                            <a href="./#nas-tym">Náš tým</a>
-                            <a href="./#kontakt">Kontakt</a>                           
-                        </div>
-                        <div class="toggle" id="myToggle">
-                            <a href="javascript:void(0);" class="icon" onclick="toogle()">
-                                <i class="fa fa-bars" id="myIcon"></i>
-                            </a>
-                            <script>
-                                function toogle() {
-                                  var x = document.getElementById("myTopnav");                                  
-                                  var y = document.getElementById("myIcon");
-                                  var z = document.getElementById("myToggle");
-                                  if (x.className === "topnav") {
-                                    x.className += " responsive";
-                                    z.className += " responsive";
-                                    y.className = "fa fa-plus";
-                                  } else {
-                                    x.className = "topnav";
-                                    z.className = "toggle";
-                                    y.className = "fa fa-bars";
-                                  }
-                                }
-                                window.onscroll = function() {
-                                  document.getElementById("myTopnav").className = "topnav";                                
-                                  document.getElementById("myIcon").className = "fa fa-bars";   
-                                  document.getElementById("myToggle").className = "toggle";                          
-                                }
-                            </script>
-                        </div>
-                        <div class="horizontal-container2">
-                            <button class="low-fi-button1"
-                                onclick="window.open('https://moje.sestraemmy.cz/-/dumlekaru','_blank');"
-                                type="button">
-                                <div class="kontaktovat-sestru-emmy1">
-                                    Kontaktovat sestru EMMY </div>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </header>
+            <header class="low-fi-page-header" w3-include-html="header.html"></header>            
             <section class="overlay-parent">
                 <div class="overlay"></div>
                 <img class="background-icon" alt src="assets/img/infuzni-stacionar.JPG">
@@ -625,43 +575,15 @@
             </footer>
         </div>
 
-        <script>
-        function adjustHelperDivs() {
-            const viewportWidth = window.innerWidth;
-            const container = document.getElementById('about-content');
-            const containerWidth = container.offsetWidth;
-            const helperWidth = (viewportWidth - containerWidth) / 2 - 24;
+        <script>  
+            window.onload = function () {
+                adjustHelperDivs();
+                updateArrows();            
+            };
 
-            document.getElementById('left-helper').style.minWidth = helperWidth + 'px';
-            document.getElementById('right-helper').style.minWidth = helperWidth + 'px';
-        }
-
-        function updateArrows() {
-            const container = document.getElementById('slider-container');
-            const prevArrow = document.getElementById('left-slider-arrow');
-            const nextArrow = document.getElementById('right-slider-arrow');
-
-            if (container.scrollLeft === 0) {
-                prevArrow.classList.add('hidden');
-            } else {
-                prevArrow.classList.remove('hidden');
-            }
-
-            if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
-                nextArrow.classList.add('hidden');
-            } else {
-                nextArrow.classList.remove('hidden');
-            }
-        }
-
-        window.onload = function () {
-            adjustHelperDivs();
-            updateArrows();
-        };
-
-        window.onresize = adjustHelperDivs;
-        document.getElementById('slider-container').onscroll = updateArrows;
-    </script>
+            window.onresize = adjustHelperDivs;
+            document.getElementById('slider-container').onscroll = updateArrows;     
+            includeHTML();   
+        </script>    
     </body>
-
 </html>

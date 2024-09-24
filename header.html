@@ -1,0 +1,50 @@
+<div class="horizontal-container">
+	<div class="horizontal-container1"> <img
+			class="image-2-icon" loading="lazy" alt
+			src="assets/img/image-2@2x.75506223.png">
+		<div class="topnav" id="myTopnav">
+			<a id="vodText" href="/">Úvod</a>
+			<a id="poskytovanPeText" href="./dum-lekaru-poskytovana-pece.html">Poskytovaná
+				péče</a>
+			<a href="./dum-lekaru-domaci-pece.html">Domácí péče</a>
+			<a href="./vybaveni.html">Vybavení</a>
+			<a class="cenk" href="./cenik.html">Ceník</a>
+			<a href="./#nas-tym">Náš tým</a>
+			<a href="./#kontakt">Kontakt</a>                           
+		</div>
+		<div class="toggle" id="myToggle">
+			<a href="javascript:void(0);" class="icon" onclick="toogle()">
+				<i class="fa fa-bars" id="myIcon"></i>
+			</a>
+			<script>
+				function toogle() {
+					var x = document.getElementById("myTopnav");                                  
+					var y = document.getElementById("myIcon");
+					var z = document.getElementById("myToggle");
+					if (x.className === "topnav") {
+					x.className += " responsive";
+					z.className += " responsive";
+					y.className = "fa fa-plus";
+					} else {
+					x.className = "topnav";
+					z.className = "toggle";
+					y.className = "fa fa-bars";
+					}
+				}
+				window.onscroll = function() {
+					document.getElementById("myTopnav").className = "topnav";                                
+					document.getElementById("myIcon").className = "fa fa-bars";   
+					document.getElementById("myToggle").className = "toggle";                          
+				}
+			</script>
+		</div>
+		<div class="horizontal-container2">
+			<button class="low-fi-button1"
+				onclick="window.open('https://moje.sestraemmy.cz/-/dumlekaru','_blank');"
+				type="button">
+				<div class="kontaktovat-sestru-emmy1">
+					Kontaktovat sestru EMMY </div>
+			</button>
+		</div>
+	</div>
+</div>

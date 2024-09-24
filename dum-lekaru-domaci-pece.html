@@ -7,42 +7,18 @@
 		<link rel="stylesheet" href="assets/css/root.css">
 		<link rel="stylesheet" href="assets/css/dum-lekaru-domaci-pece.892f6f33.css">
 		<link rel="stylesheet" href="assets/css/shared.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap">
 		<title>Domácí péče a odkazy | Dům Lékařů</title>
 		<meta name="description"
 			content="Domácí péče je určena pacientům vyžadujícím následnou péči po propuštění z nemocnice nebo těm, kteří potřebují pravidelnou pomoc kvůli svému zdravotnímu stavu.">
+		<script src="assets/js/shared.js"></script>
 	</head>
 
 	<body>
 		<div class="main-page-content">
-			<header class="low-fi-page-header">
-				<div class="horizontal-container">
-					<div class="horizontal-container1"> <a href="/"><img class="image-2-icon"
-								loading="lazy" alt
-								src="assets/img/image-2@2x.75506223.png"></a>
-						<div class="horizontal-container3">
-							<a class="vod" id="vodText" href="/">Úvod</a>
-							<a class="poskytovan-pe" id="poskytovanPeText"
-								href="./dum-lekaru-poskytovana-pece.html">Poskytovaná péče</a>
-							<a class="domc-pe" href="./dum-lekaru-domaci-pece.html">Domácí péče</a>
-							<a class="vybaven" href="./vybaveni.html">Vybavení</a>
-							<div class="link-wrapper">
-								<a class="cenk" href="./cenik.html">Ceník</a>
-							</div>
-							<a class="vybaven" href="./#nas-tym">Náš tým</a>
-							<a class="kontakt" href="./#kontakt">Kontakt</a>
-						</div>
-						<div class="horizontal-container2">
-							<button class="low-fi-button1"
-								onclick="window.open('https://moje.sestraemmy.cz/-/dumlekaru','_blank');"
-								type="button">
-								<div class="kontaktovat-sestru-emmy1"> Kontaktovat sestru EMMY </div>
-							</button>
-						</div>
-					</div>
-				</div>
-			</header>
+			<header class="low-fi-page-header" w3-include-html="header.html"></header>  
 			<section class="subpage-intro">
 				<div class="background-overlay"> <img class="background-icon2" alt
 						src="assets/img/background@2x.6cb7427c.png">
@@ -239,6 +215,9 @@
 				</div>
 			</footer>
 		</div>
+		<script>              
+            includeHTML();   
+        </script>    
 	</body>
 
 </html>
