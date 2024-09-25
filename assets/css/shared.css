@@ -291,23 +291,20 @@ button:hover {
 }
 
 .container1 {
-    flex-direction: column;
-    justify-content: flex-start;
     align-items: flex-start;
     display: flex;
-    gap: var(--gap-5xl);
     width: 54px;
     justify-content: space-between;
     gap: var(--gap-xl);
     flex-direction: row;
     width: 1216px;
-    max-width: 100%
+    max-width: 100%;
 }
 
 .logo-section {
     justify-content: flex-start;
     align-items: flex-start;
-    gap: var(--gap-base);
+    /*gap: var(--gap-base);*/
     flex-direction: column;
     display: flex;
     box-sizing: border-box;
@@ -330,7 +327,7 @@ button:hover {
 }
 
 .subtitle-wrapper {
-    padding: 0 0 var(--padding-base);
+    /*padding: 0 0 var(--padding-base);*/
     flex-direction: row;
     justify-content: flex-start;
     align-self: stretch;
@@ -360,6 +357,7 @@ button:hover {
 .footer-links {
     display: flex;
     flex-direction: column;
+    gap: var(--gap-9xs);
 }
 
 .footer-links-wrapper {
@@ -424,6 +422,7 @@ button:hover {
 
     .lo-fi-ux-footer .container1 {
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .footer-links-wrapper,
@@ -451,7 +450,7 @@ button:hover {
         position: fixed;
         display: block;
         overflow-y: auto;
-        top: 82px;
+        top: 86px;
         right: 0px;
         background-color: rgba(56, 56, 56, 1);
         z-index: 70;
@@ -494,7 +493,7 @@ button:hover {
         display: none;
     }
     .topnav.responsive {
-        top: 75px;
+        top: 78px;
     }
 
     .image-2-icon {
@@ -550,7 +549,8 @@ button:hover {
         gap: 0;
     }
 
-    .footer-links-wrapper {
+    .footer-links-wrapper,
+    .logo-section {
         flex-basis: 160px;
     }
 
