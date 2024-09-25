@@ -533,7 +533,7 @@ button:hover {
         padding: var(--padding-base)
     }
 
-    .gallery {
+    .gallery .content1 {
         grid-template-columns: repeat(2, 1fr);
     }
 

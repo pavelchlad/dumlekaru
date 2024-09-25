@@ -1652,14 +1652,26 @@
 }
 
 .gallery {
-    width: 100vw;
+    justify-content: center;
+    align-self: stretch;
+    align-items: flex-start;
+    max-width: 100%;
+    display: flex;
+    margin: 0px 10px 0px 10px;
+}
+
+.gallery .content1 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    gap: var(--gap-7xs);
 }
 
 .gallery img {
     width: 100%;
+    border-radius: var(--br-xs);
+    background-color: var(--neutral-50);
+    border: 1px solid var(--neutral-600);
 }
 
 .icon-placeholder-fill {
@@ -1895,6 +1907,10 @@
         padding: var(--padding-base);
         gap: var(--padding-base);
     }
+    .horizontal-container9 .contact-details, 
+    .horizontal-container9 iframe{
+        width: 100%;
+    }
 
     .row3 {
         padding: var(--padding-base);
@@ -1909,6 +1925,10 @@
         margin-bottom: var(--padding-base);
         border-radius: var(--br-xl);
         overflow: hidden;
+    }
+
+    .gallery .content1 img:not(:nth-child(-n+8)) {
+        display: none;
     }
 
     .info-box-content {
