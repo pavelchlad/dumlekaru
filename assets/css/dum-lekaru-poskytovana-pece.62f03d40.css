@@ -277,7 +277,7 @@ button:hover {
 	font-weight: 500;
 }
 
-.service-list-feature {
+.tab {
 	display: flex;
 	box-shadow: var(--shadow-xsm);
 	border-radius: var(--br-base);
@@ -289,13 +289,15 @@ button:hover {
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
+	cursor: pointer;
 }
 
-.service-list-feature.active {
+.tab.active {
 	border: 1px solid var(--color-red);
 }
 
-.service-list-feature.active img {
+.tab.active img,
+.tab:hover img {
 	filter: invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(117%);
 }
 
@@ -732,7 +734,7 @@ button:hover {
 
 .chirurgick-a-pevazov-pe-wrapper,
 .features-base15,
-.list1 {
+.tabs {
 	justify-content: flex-start;
 	align-items: flex-start;
 	display: flex
@@ -749,10 +751,9 @@ button:hover {
 	flex-direction: row
 }
 
-.list1 {
+.tabs {
 	gap: var(--gap-5xs);
 	flex-direction: column;
-	flex-basis: 360px;
 }
 
 .doporuujeme-se-objednat {
@@ -950,7 +951,6 @@ button:hover {
 
 .posudek-k-zen-motorovch-container {
 	font-size: var(--font-size-sm);
-	width: 727px;
 	max-width: 100%;
 	line-height: 20px;
 	display: inline-block;
@@ -958,7 +958,6 @@ button:hover {
 }
 
 .dokumenty-ke-staen {
-	width: 696px;
 	max-width: 100%;
 	font-weight: 500;
 	display: inline-block;
@@ -1049,16 +1048,15 @@ button:hover {
 	overflow: hidden
 }
 
-.row4,
+.tabcontent,
 .row5,
-.services,
-.services-list {
+.services {
 	align-items: flex-start;
 	max-width: 100%;
 	display: flex
 }
 
-.row4 {
+.tabcontent {
 	box-shadow: var(--shadow-xsm);
 	border-radius: var(--br-xl);
 	background-color: var(--neutral-50);
@@ -1070,7 +1068,8 @@ button:hover {
 	flex-direction: column;
 	flex: 1;
 	width: 100%;
-	overflow: hidden
+	overflow: hidden;
+	display: none;
 }
 
 .services {
@@ -1079,9 +1078,10 @@ button:hover {
 }
 
 .services-list {
+	display: grid;
+	grid-template-columns: 340px 1fr;
 	gap: var(--gap-13xl);
 	width: 1216px;
-	justify-content: flex-start;
 }
 
 .services {
@@ -2608,17 +2608,24 @@ button:hover {
 
 @media screen and (width<=1000px) {
 	.services-list {
-		flex-direction: column;
+		grid-template-columns: 260px 1fr;
+		gap: 16px;
 	}
 }
 
 @media screen and (width<=750px) {
+	.services-list {
+		grid-template-columns: 1fr;
+	}
+
 	.services {
 		margin-top: var(--padding-23xl)
 	}
 
-	.row4 {
+	.tabcontent {
 		padding: var(--padding-5xl) var(--padding-base);
+		margin-bottom: 16px;
+		margin-top: -6px;
 	}
 
 	.tips-container {
