@@ -51,6 +51,11 @@
     position: relative
 }
 
+.poskytujeme-standardn-lebn a {
+    text-decoration: underline;
+    color: var(--color-white);
+}
+
 .paragraph-container {
     justify-content: flex-start;
     align-self: stretch;
