@@ -1069,6 +1069,7 @@
 }
 
 .modal-member-overlay {
+    display: none;
     padding: 0 var(--padding-12xs)0 var(--padding-4xs);
     box-sizing: border-box;
     flex-direction: row;
