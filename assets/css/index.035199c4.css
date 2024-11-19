@@ -1807,16 +1807,16 @@
     transition: all 0.3s ease-in-out;
 }
 
-.team-member:hover button {
+.team-member:not(.no-more-info):hover button {
     bottom: 32px;
     opacity: 100;
 }
 
-.team-member:hover .team-member-photo {
+.team-member:not(.no-more-info):hover .team-member-photo {
     filter: drop-shadow(0px 4px 20px #00000025) saturate(0);
 }
 
-.team-member:hover {
+.team-member:not(.no-more-info):hover {
     border-color: var(--color-steelblue);
 }
 
@@ -1939,6 +1939,86 @@
     transform: rotate(-90deg);
 }
 
+/* Carousel Styling */
+.modal {
+    /* default */
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: auto;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: fit-content;
+    margin: auto;
+    background: #F9FBFD;
+    padding: 32px;
+    border-radius: 20px;
+    border: 1px solid #E6E9EC;
+    text-align: left;
+    position: relative;
+}
+
+.modal-content img {
+    width: 240px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.modal-content h3 {
+    margin-bottom: 0;
+}
+
+.modal-content p {
+    margin: 0;
+    font-weight: 300;
+}
+
+.modal-content .label {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #999;
+    margin-top: 16px;
+}
+
+.modal-content ul {
+    margin-bottom: 0;
+    line-height: 1.5rem;
+}
+
+.modal-close {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 2.5rem;
+    font-weight: 300;
+    background-color: #fff;
+    color: #999999;
+}
+
+.close:hover {
+    color: #000;
+}
+
+
 
 @media screen and (width<=1280px) {
     .info-box-image-container {
@@ -1972,6 +2052,11 @@
     .swiper-button-next {
         top: auto !important;
         bottom: 10px;
+    }
+
+    .arrow.swiper-button-prev,
+    .arrow.swiper-button-next {
+        bottom: 0px;
     }
 }
 
@@ -2085,6 +2170,25 @@
         min-width: 200px;
         height: 300px;
         padding: var(--padding-base);
+    }
+
+    .modal-content {
+        padding: 16px;
+        font-size: 0.875rem;
+    }
+
+    .modal-content .modal-close {
+        top: 16px;
+        right: 16px;
+    }
+
+    .modal-content img {
+        width: 180px;
+        height: 150px;
+    }
+
+    .modal-content ul {
+        line-height: 1.125rem;
     }
 
 }
