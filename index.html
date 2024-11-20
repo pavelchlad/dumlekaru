@@ -449,176 +449,171 @@
             </section>
             <div class="slider-section-wrapper">
                 <div class="arrow-wrapper" id="left-slider-arrow">
-                    <button class="arrow"
+                    <div class="arrow swiper-button-prev"
                         onclick="document.getElementById('slider-container').scrollLeft -= 400">
-                        &lt;
-                    </button>
+                    </div>
                 </div>
                 <div class="arrow-wrapper" id="right-slider-arrow">
-                    <button class="arrow"
+                    <div class="arrow swiper-button-next"
                         onclick="document.getElementById('slider-container').scrollLeft += 400">
-                        &gt;
-                    </button>
+                    </div>
                 </div>
 
                 <section class="slider-container" id="slider-container">
                     <div id="left-helper" class="helper-div"></div>
 
-                    <div class="team-member">
-                        <div class="team-member-name">MUDr. Vladimír
-                            Maňásek</div>
+                    <div class="team-member no-more-info">
+                        <div class="team-member-name">MUDr. Vladimír Maňásek</div>
                         <div class="team-member-description"> Praktický lékař </div>
                         <img class="team-member-photo" alt
                             src="assets/img/team/Mudr vladimir manasek3.png">
-                        <button>
+                        <button data-modal="manasek">
                             <div>Více informací</div>
                         </button>
-                        <div class="modal-member-overlay">
-                            <div class="modal-content">
-                                <div class="member-modal1 ">
-                                    MUDr. Vladimír Maňásek  
-                                </div> 
-                                <div class="member-modal1 ">
-                                    praktický lékař
-                                </div>
-                            </div> 
-                            <div class="modal-content1">
-                                <div class="member-modal1 ">
-                                    praktický lékař
-                                    absolvent lékařské fakulty na Univerzitě Palackého v Olomouci 1989
-                                    atestace z oboru všeobecného praktické lékařství 1993
-                                    školitel a garant oboru všeobecné praktické lékařství od 2010
-                                    diplom celoživotního vzdělávání České lékařské komory
-                                    specialista na léčbu akupunkturou a myoskeletální medicínu
-                                    aktivně hovořící rusky, pasivně anglicky
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div class="team-member">
-                        <div class="team-member-name">MUDr. Tomáš Jínek,
-                            Ph.D.</div>
+                        <div class="team-member-name">MUDr. Tomáš Jínek, Ph.D.</div>
                         <div class="team-member-description"> Praktický lékař a chirurg </div>
                         <img class="team-member-photo" alt
                             src="assets/img/team/MUDr. Tomás Jínek.png">
-                        <button>
+                        <button data-modal="jinek">
                             <div>Více informací</div>
-                        </button>
-                        <div class="modal-member-overlay">
-                            <div class="modal-content">
-                                <div class="member-modal1 ">
-                                    MUDr. Tomáš Jínek, Ph.D.
-                                </div> 
-                                <div class="member-modal1 ">
-                                    praktický lékař a chirurg
-                                </div>
-                            </div> 
-                            <div class="modal-content1">
-                                <div class="member-modal1 ">
-                                    <b>Vzdělání</b>
-                                    lékařská fakulta na Masarykově Univerzitě v Brně 2001-2007
-                                    atestace a specializace z oboru chirurgie 2012
-                                    atestace z nadstavbového oboru onkochirurgie 2018
-                                    postgraduální studium (titul Ph.D.) na Univerzitě Palackého v Olomouci 2013-2019
-                                    atestace z oboru všeobecného praktické lékařství v roce 2022
-                                    diplom celoživotního vzdělávání České lékařské komory
-                                    aktivně hovoří anglicky a německy
-                                    <b>Praxe</b>
-                                    Chirurgické oddělení Komplexní onkologické centrum Nemocnice AGEL Nový Jičín a.s.
-                                    Chirurgické oddělení Nemocnice Šternberk
-                                    Interní oddělení Nemocnice Odry p.o.
-                                    Praktický lékař Dům Lékařů a.s. od 2018 dosud
-                                    sekundární lékař chirurgického oddělení Nemocnice Frýdek-Místek p.o. od 2020 dosud
-                                </div>
-                            </div>
-                        </div>
+                        </button>                        
                     </div>
                     <div class="team-member">
                         <div class="team-member-name">MUDr. Josef Rybář</div>
                         <div class="team-member-description"> Praktický lékař, anesteziolog </div>
-                        <img class="team-member-photo" alt
-                            src="assets/img/team/MUDr. Josef Rybár 3.png">
-                        <button>
+
+                        <img class="team-member-photo" alt src="assets/img/team/MUDr. Josef Rybár 3.png">
+                        <button data-modal="rybar">
                             <div>Více informací</div>
-                        </button>
-                        <div class="modal-member-overlay">
-                            <div class="modal-content">
-                                <div class="member-modal1 ">
-                                    MUDr. Josef Rybář
-                                </div> 
-                                <div class="member-modal1 ">
-                                    praktický lékař a anesteziolog
-                                </div>
-                            </div> 
-                            <div class="modal-content1">
-                                <div class="member-modal1 ">
-                                    <b>Vzdělání</b>
-                                    lékařská fakulta na Univerzitě Palackého v Olomouci 1995-2001
-                                    atestace z oboru anesteziologie 2004, specializovaná způsobilost z oboru anesteziologie 2006
-                                    diplom celoživotního vzdělávání České lékařské komory
-                                    aktivně hovoří anglicky
-                                    <b>Praxe</b>
-                                    sekundární lékař anesteziologického oddělení Nemocnice AGEL Nový Jičín a.s. od 2001 dosud
-                                    lékař záchranné služby Nový Jičín od 2002 dosud
-                                    lékař hospice Strom života od 2013 dosud
-                                    Praktický lékař Dům Lékařů a.s. od 2017 dosud
-                                </div>
-                            </div>
-                        </div>
+                        </button>                      
+                        
                     </div>
-                    <div class="team-member">
+                    <div class="team-member no-more-info">
                         <div class="team-member-name">Lenka Bolomová</div>
                         <div class="team-member-description"> Zdravotní sestra
                         </div>
                         <img class="team-member-photo" alt
                             src="assets/img/team/Lenka Bolomová2.png">
-                        <button>
+                        <!-- <button>
                             <div>Více informací</div>
-                        </button>
+                        </button> -->
                     </div>
-                    <div class="team-member">
+                    <div class="team-member no-more-info">
                         <div class="team-member-name">Martina Trávničková</div>
                         <div class="team-member-description"> Zdravotní sestra
                         </div>
                         <img class="team-member-photo" alt
                             src="assets/img/team/Martina Trávnícková2.png">
-                        <button>
+                        <!-- <button>
                             <div>Více informací</div>
-                        </button>
+                        </button> -->
                     </div>
-                    <div class="team-member">
+                    <div class="team-member no-more-info">
                         <div class="team-member-name">Blažena Vránová</div>
                         <div class="team-member-description"> Zdravotní sestra
                         </div>
                         <img class="team-member-photo" alt
                             src="assets/img/team/Blazena Vránová2.png">
-                        <button>
+                        <!-- <button>
                             <div>Více informací</div>
-                        </button>
+                        </button> -->
                     </div>
-                    <div class="team-member">
+                    <div class="team-member no-more-info">
                         <div class="team-member-name">Hana Labajová</div>
                         <div class="team-member-description"> Zdravotní sestra
                         </div>
                         <img class="team-member-photo" alt
                             src="assets/img/team/Hana Labajova.png">
-                        <button>
+                        <!-- <button>
                             <div>Více informací</div>
-                        </button>
+                        </button> -->
                     </div>
-                    <div class="team-member">
+                    <div class="team-member no-more-info">
                         <div class="team-member-name">Vendula Kochová</div>
                         <div class="team-member-description"> Recepční </div>
                         <img class="team-member-photo" alt
                             src="assets/img/team/Vendula Kochová3.png">
-                        <button>
+                        <!-- <button>
                             <div>Více informací</div>
-                        </button>
+                        </button> -->
                     </div>
 
                     <div id="right-helper" class="helper-div"></div>
                 </section>
             </div>
+
+            <!-- Modals -->
+            <div class="modal" id="jinek">
+                <div class="modal-content">
+                    <span class="modal-close">&times;</span>
+
+                    <img
+                        src="assets/img/team/tomas-profile.png"
+                        alt="MUDr. Tomáš Jínek">
+                    <h3>MUDr. Tomáš Jínek, Ph.D.</h3>
+                    <p>Praktický lékař a chirurg</p>
+
+                    <p class="label">Vzdělání</p>
+                    <ul>
+                        <li>Lékařská fakulta na Masarykově Univerzitě v Brně
+                            2001-2007</li>
+                        <li>Atestace a specializace z oboru chirurgie 2012</li>
+                        <li>Atestace z nadstavbového oboru onkochirurgie
+                            2018</li>
+                        <li>Postgraduální studium (titul Ph.D.) na Univerzitě
+                            Palackého v Olomouci 2013-2019</li>
+                        <li>Atestace z oboru všeobecného praktické lékařství v
+                            roce 2022</li>
+                        <li>Diplom celoživotního vzdělávání České lékařské
+                            komory</li>
+                        <li>Aktivně hovoří anglicky a německy 🇬🇧 🇩🇪</li>
+                    </ul>
+                    <p class="label">Praxe</p>
+                    <ul>
+                        <li>Chirurgické oddělení Komplexní onkologické centrum
+                            Nemocnice AGEL Nový Jičín a.s.</li>
+                        <li>Chirurgické oddělení Nemocnice Šternberk</li>
+                        <li>Interní oddělení Nemocnice Odry p.o.</li>
+                        <li>Praktický lékař Dům Lékařů a.s. od 2018 dosud</li>
+                        <li>Sekundární lékař chirurgického oddělení Nemocnice
+                            Frýdek-Místek p.o. od 2020 dosud</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal" id="rybar">
+                <div class="modal-content">
+                    <span class="modal-close">&times;</span>
+
+                    <img
+                        src="assets/img/team/josef-profile.png"
+                        alt="MUDr. Tomáš Jínek">
+                    <h3>MUDr. Josef Rybář</h3>
+                    <p>Praktický lékař a anesteziolog</p>
+
+                    <p class="label">Vzdělání</p>
+                    <ul>
+                        <li>Lékařská fakulta na Univerzitě Palackého v Olomouci
+                            1995-2001</li>
+                        <li>Atestace z oboru anesteziologie 2004</li>
+                        <li>Specializovaná způsobilost z oboru anesteziologie
+                            2006</li>
+                        <li>Diplom celoživotního vzdělávání České lékařské
+                            komory</li>
+                        <li>Aktivně hovoří anglicky</li>
+                    </ul>
+                    <p class="label">Praxe</p>
+                    <ul>
+                        <li>Sekundární lékař anesteziologického oddělení
+                            Nemocnice AGEL Nový Jičín a.s. od 2001 dosud</li>
+                        <li>Lékař záchranné služby Nový Jičín od 2002 dosud</li>
+                        <li>Lékař hospice Strom života od 2013 dosud</li>
+                        <li>Praktický lékař Dům Lékařů a.s. od 2017 dosud</li>
+                    </ul>
+                </div>
+            </div>
+
             <section class="content-container" id="kontakt">
                 <div class="content1">
                     <div class="header-wrapper">
@@ -718,7 +713,8 @@
         <script>  
             window.onload = function () {
                 adjustHelperDivs();
-                updateArrows();            
+                updateArrows();
+                createModals();      
             };
 
             window.onresize = adjustHelperDivs;

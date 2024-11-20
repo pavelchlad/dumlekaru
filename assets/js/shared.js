@@ -74,6 +74,35 @@ function updateArrows() {
 	}
 }
 
+function createModals() {
+	const modalButtons = document.querySelectorAll('button[data-modal]');
+	const closeButtons = document.querySelectorAll('.modal-close');
+
+	// Open modal on button click
+	modalButtons.forEach(button => {
+		button.addEventListener('click', () => {
+			const modalId = button.getAttribute('data-modal');
+			const modal = document.getElementById(modalId);
+			if (modal) modal.style.display = 'flex';
+		});
+	});
+
+	// Close modal on 'X' button click or when clicking outside the modal content
+
+	closeButtons.forEach(button => {
+		button.addEventListener('click', () => {
+			const modal = button.closest('.modal');
+			if (modal) modal.style.display = 'none';
+		});
+	});
+
+	window.addEventListener('click', event => {
+		if (event.target.classList.contains('modal')) {
+			event.target.style.display = 'none';
+		}
+	});
+}
+
 // Poskytovana pece - taby
 function openTab(evt, tabName) {
 	var i, tabcontent, tab;
