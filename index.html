@@ -26,147 +26,8 @@
             <header class="low-fi-page-header"
                 w3-include-html="header.html"></header>
 
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">                                          
-                    <div class="swiper-slide">
-                        <div class="overlay-parent">
-                            <div class="overlay"></div>
-                            <img class="background-icon" alt
-                                src="assets/img/infuzni-stacionar.JPG">
-                            <div class="main-content">
-                                <div class="background-parent">
-                                    <div class="vertical-container">
-                                        <div class="paragraph-container">
-                                            <h1
-                                                class="konstantn-tm-lka-container">
-                                                Konstantní tým
-                                                lékařů,
-                                                kteří o Vás pečují ve
-                                                sdružené praxi
-                                            </h1>
-                                            <div
-                                                class="poskytujeme-standardn-lebn">
-                                                Poskytujeme standardní
-                                                léčebně-preventivní
-                                                péči
-                                                praktického lékaře. Nabízíme též
-                                                nadstandardní placenou péči a
-                                                službu
-                                                nehrazené
-                                                zdravotními pojišťovnami
-                                                (posudková
-                                                a
-                                                závodní péče) 
-                                                <a class="white" href="./index.html#nas-tym">Náš tým</a>
-                                            </div>                                            
-                                        </div>                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="overlay-parent">
-                            <div class="overlay"></div>
-                            <img class="background-icon" style="object-position: 50% 0%;" 
-                            src="assets/img/emmy_bg.jpg">
-                            <div class="main-content">
-                                <div class="background-parent">
-                                    <div class="vertical-container">
-                                        <div class="paragraph-container">
-                                            <h2
-                                                class="konstantn-tm-lka-container">
-                                                Virtuální sestra Emmy
-                                            </h2>
-                                            <div
-                                                class="poskytujeme-standardn-lebn">
-                                                Ošetřujeme objednané pacienty na přesně stanovený termín. 
-                                                Rezervujte si termín z pohodlí domova online bez čekání u lékaře.</u></b>
-                                            </div>
-                                        </div>
-                                        <div class="vertical-container1">
-                                            <button class="low-fi-button1"
-                                                onclick="window.open('https://moje.sestraemmy.cz/-/dumlekaru','_blank');"
-                                                type="button">
-                                                <div
-                                                    class="kontaktovat-sestru-emmy1">
-                                                    Kontaktovat sestru EMMY
-                                                </div>
-                                            </button>
-                                            <div class="horizontal-container4">
-                                                <img
-                                                    class="phinfo-icon" alt
-                                                    src="assets/img/phinfo.610fbe4f.svg">
-                                                <div class="jak-emmy-pouvat"> <a
-                                                        class="white"
-                                                        href="https://www.youtube.com/watch?v=XGNrPM_icPM"
-                                                        target="_blank">Jak Emmy používat?</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                      
-                    <div class="swiper-slide">
-                        <div class="overlay-parent">
-                            <div class="overlay"></div>
-                            <img class="background-icon" alt
-                                src="assets/img/pexels-gustavo-fring-3985170.jpg">
-                            <div class="main-content">
-                                <div class="background-parent">
-                                    <div class="vertical-container">
-                                        <div class="paragraph-container">
-                                            <h2
-                                                class="konstantn-tm-lka-container">
-                                                Aktuální doporučení k očkování
-                                            </h2>
-                                            <div
-                                                class="poskytujeme-standardn-lebn">
-                                                Aktuálně očkujeme na <b><u>chřipku</u></b> i <b><u>COVID</u></b>.
-                                                K dispozici jsou nové rozšířené vakcíny na pneumokoka <b><u>Prevenar&nbsp;20</u></b> a <b><u>Pneumovax&nbsp;23</u></b>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="overlay-parent">
-                            <div class="overlay"></div>
-                            <img class="background-icon" alt
-                                src="assets/img/cekarna_pracoviste.jpg">
-                            <div class="main-content">
-                                <div class="background-parent">
-                                    <div class="vertical-container">
-                                        <div class="paragraph-container">
-                                            <h2
-                                                class="konstantn-tm-lka-container">
-                                                Aktuální informace k provozu ordinace a ordinační doby.
-                                            </h2>
-                                            <div
-                                                class="poskytujeme-standardn-lebn">
-                                                Projekt na populační screening osteoporózy pokračuje. 
-                                                Denzitomerické vyšetření k dispozici v Novém Jičíně. </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-                <div class="autoplay-progress">
-                    <svg viewBox="0 0 48 48">
-                        <circle cx="24" cy="24" r="20"></circle>
-                    </svg>
-                    <span></span>
-                </div>
-
-            </div>
+            <div class="swiper mySwiper" w3-include-html="aktuality.html"></div>
+        
             <section class="row">
                 <div class="image-gallery">
                     <div class="horizontal-container5">
@@ -714,38 +575,13 @@
             window.onload = function () {
                 adjustHelperDivs();
                 updateArrows();
-                createModals();      
+                createModals();  
+                initCarousel();    
             };
 
             window.onresize = adjustHelperDivs;
             document.getElementById('slider-container').onscroll = updateArrows;     
-            includeHTML();   
-
-            // Swiper
-            const progressCircle = document.querySelector(".autoplay-progress svg");
-            const progressContent = document.querySelector(".autoplay-progress span");
-                var swiper = new Swiper(".mySwiper", {
-                loop: true,
-                autoplay: {
-                    delay: 6000,
-                    disableOnInteraction: false
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev"
-                },
-                on: {
-                    autoplayTimeLeft(s, time, progress) {
-                    progressCircle.style.setProperty("--progress", 1 - progress);
-                    progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-                    }
-                }
-            });
+            includeHTML();               
         </script>
-
     </body>
 </html>
