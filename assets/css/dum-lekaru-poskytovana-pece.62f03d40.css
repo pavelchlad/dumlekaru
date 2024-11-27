@@ -1071,6 +1071,17 @@ button:hover {
 	overflow: hidden;
 	display: none;
 }
+.tabcontent p {
+	margin-top: 0px;
+	align-self: stretch;
+	text-align: justify;
+}
+.tabcontent p.bold {
+	font-weight: 500;
+}
+.tabcontent li {
+	text-align: justify;
+}
 
 .services {
 	flex-direction: row;
