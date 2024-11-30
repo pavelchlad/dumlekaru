@@ -142,32 +142,13 @@ button:hover {
     background-color: var(--color-deepskyblue)
 }
 
-.list-row {
-    justify-content: center;
-    align-items: center;
-    gap: var(--gap-5xs);
-    flex-direction: row;
-    display: flex
-}
-
-.list-row1 {
-    justify-content: center;
-    align-items: center;
-    gap: var(--gap-5xs);
-    flex-direction: row;
-    display: flex
-}
-
-.list-row2 {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
-    display: flex
-}
-
 .list,
-.list-row3 {
+.list2,
+.list-row,
+.list-row1,
+.list-row2,
+.list-row3,
+.list-row4 {
     justify-content: center;
     align-items: center;
     gap: var(--gap-5xs);
@@ -175,11 +156,14 @@ button:hover {
     display: flex
 }
 
-.list {
+.list, .list2 {
     justify-content: flex-start;
     gap: var(--gap-9xs);
     flex-direction: column;
     max-width: 100%
+}
+.list2 {
+    align-items: start;
 }
 
 /* HEADER */
