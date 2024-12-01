@@ -222,8 +222,178 @@ button:hover {
     color: var(--color-white);
 }
 
-/* HEADER */
+.odkazy-na-domc {
+	align-self: stretch;
+	position: relative;
+    font-weight: 500;
+}
+.contact-info{
+	align-items: flex-start;
+	max-width: 100%;
+	display: flex;
+	font-size: var(--font-size-sm);
+	flex-flow: wrap;
+	justify-content: flex-start;
+	align-self: stretch;
+	gap: 25px 22px;
+	min-height: 112px
+}
+.contact-header,
+.odkazy-na-domc {
+	align-self: stretch;
+	position: relative
+}
 
+.odkazy-na-domc {
+	font-weight: 500;
+}
+
+.contact-header {
+	line-height: 20px;
+    font-weight: 600;
+}
+
+.system-uiconsmail1 {
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
+	min-height: 20px;
+	position: relative;
+	overflow: hidden
+}
+
+.dagmarhrabovskacentrumcz {
+	white-space: nowrap;
+	line-height: 20px;
+	text-decoration: underline;
+	position: relative
+}
+
+.contact-icons2 {
+	justify-content: flex-start;
+	align-items: center;
+	gap: var(--gap-9xs);
+	flex-direction: row;
+	display: flex
+}
+
+.phphone-light-icon1 {
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
+	min-height: 20px;
+	position: relative;
+	overflow: hidden
+}
+
+.div5 {
+	white-space: nowrap;
+	min-width: 120px;
+	line-height: 20px;
+	display: inline-block;
+	position: relative
+}
+
+.contact-details1,
+.contact-icons3 {
+	justify-content: flex-start;
+	align-items: center;
+	gap: var(--gap-9xs);
+	flex-direction: row;
+	display: flex
+}
+
+.contact-details1 {
+	flex-direction: column;
+	flex: 1;
+	justify-content: center;
+	align-items: flex-start;
+	min-width: 250px;
+	max-width: 350px;
+}
+
+.phphone-light-icon2 {
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
+	min-height: 20px;
+	position: relative;
+	overflow: hidden
+}
+
+.phone-number {
+	white-space: nowrap;
+	min-width: 124px;
+	line-height: 20px;
+	display: inline-block;
+	position: relative
+}
+
+.second-contact {
+	justify-content: flex-start;
+	align-items: center;
+	gap: var(--gap-9xs);
+	flex-direction: row;
+	display: flex
+}
+
+.second-contact {
+	flex-direction: column;
+	flex: 1;
+	justify-content: center;
+	align-items: flex-start;
+	min-width: 350px;
+	max-width: 100%
+}
+
+.link-names,
+.live-wrapper8 {
+	box-sizing: border-box;
+	align-self: stretch;
+	max-width: 100%
+}
+
+.link-names {
+	border-top: 1px solid var(--neutral-600);
+	flex: 1;
+	position: relative
+}
+
+.live-wrapper8 {
+	padding: var(--padding-base)0 var(--padding-mini);
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	height: 32px;
+	display: flex
+}
+
+.row9 {
+	justify-content: flex-start;
+	align-items: flex-start;
+	max-width: 100%;
+	display: flex;
+	box-sizing: border-box;
+	box-shadow: var(--shadow-xsm);
+	border-radius: var(--br-xl);
+	background-color: var(--color-snow);
+	padding: var(--padding-13xl);
+	gap: var(--gap-base);
+	flex-direction: column;
+	flex: 1;
+	overflow: hidden
+}
+
+.lo-fi-ux-features2 {	
+	padding: 0 var(--padding-13xl) var(--padding-13xl) var(--padding-13xl) ;
+}
+
+.image-23-icon {
+	border-radius: var(--br-xl);
+    padding-top: var(--padding-13xl);
+}
+
+/* HEADER */
 
 .topnav {
     justify-content: space-between;
