@@ -73,19 +73,6 @@
     overflow: hidden
 }
 
-.jak-emmy-pouvat a {
-    min-width: 116px;
-    line-height: 18px;
-    text-decoration: underline;
-    color: var(--color-black);
-    display: inline-block;
-    position: relative
-}
-
-.jak-emmy-pouvat a.white {
-    color: var(--color-white);
-}
-
 .horizontal-container4 {
     justify-content: flex-start;
     align-items: center;
@@ -763,14 +750,6 @@
     position: relative
 }
 
-.list-row2 {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
-    display: flex
-}
-
 .iconamooncheck-fill3 {
     flex-shrink: 0;
     width: 24px;
@@ -784,68 +763,11 @@
     position: relative
 }
 
-.list,
-.list-row3 {
-    justify-content: center;
-    align-items: center;
-    gap: var(--gap-5xs);
-    flex-direction: row;
-    display: flex
-}
-
-.list {
-    justify-content: flex-start;
-    gap: var(--gap-9xs);
-    flex-direction: column;
-    max-width: 100%
-}
-
-.image-21-icon {
-    object-fit: contain;
-    width: 450px;
-    max-width: 100%;
-    max-height: 100%;
-    position: relative
-}
-
-.kontaktovat-sestru-emmy3 {
-    font-size: var(--font-size-sm);
-    font-weight: 500;
-    font-family: var(--font-inter);
-    color: var(--color-white);
-    text-align: left;
-    position: relative
-}
-
-.phinfo-icon2 {
-    flex-shrink: 0;
-    width: 16px;
-    height: 16px;
-    position: relative;
-    overflow: hidden
-}
-
-.horizontal-container7 {
-    justify-content: flex-start;
-    align-items: center;
-    gap: var(--gap-9xs);
-    flex-direction: row;
-    display: flex
-}
-
 .lo-fi-ux-features1,
-.row2,
-.vertical-container2 {
+.row2 {
     flex-direction: column;
     align-items: center;
     display: flex
-}
-
-.vertical-container2 {
-    justify-content: flex-start;
-    gap: var(--gap-5xs);
-    text-align: left;
-    font-size: var(--font-size-xs)
 }
 
 .lo-fi-ux-features1,
