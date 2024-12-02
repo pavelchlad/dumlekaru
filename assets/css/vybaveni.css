@@ -12,11 +12,11 @@
 }
 
 .vybaveni-img {
-    width: 240px;
-    height: 160px;
+    width: 450px;
     border-radius: 20px;
     border: 1px solid #E6E9EC;
     object-fit: contain;
+    margin-top: var(--padding-13xl);
 }
 
 .vybaveni-item p {

@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, width=device-width">
-        <link rel="stylesheet" href="assets/css/root.css">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, width=device-width">
+		<link rel="stylesheet" href="assets/css/root.css">
         <link rel="stylesheet" href="assets/css/vybaveni.css">
-        <link rel="stylesheet" href="assets/css/shared.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap">
-        <title>Vybavení - Špičkové technologie | Dům Lékařů</title>
-        <meta name="description"
-            content="V naší lékařské ordinaci jsme hrdí na to, že můžeme našim pacientům nabídnout špičkové přístrojové vybavení, které nám umožňuje poskytovat vysoce kvalitní a přesnou zdravotní péči.">
-        <script src="assets/js/shared.js"></script>
-    </head>
+		<link rel="stylesheet"
+			href="assets/css/dum-lekaru-poskytovana-pece.62f03d40.css">
+		<link rel="stylesheet" href="assets/css/shared.css">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap">
+		<title>Poskytovaná péče - Naše služby | Dům Lékařů</title>
+		<meta name="description"
+			content="Naše zdravotnické zařízení nabízí široké spektrum služeb přizpůsobených potřebám našich pacientů. Na této stránce najdete všechny důležité informace o poskytované péči, abyste věděli, jak probíhá léčba u nás.">
+		<script src="assets/js/shared.js"></script>
+	</head>
 
-    <body>
-        <div class="main-page-content">
-            <header class="low-fi-page-header" w3-include-html="header.html"></header>  
-            <section class="subpage-intro">
+	<body>
+		<div class="main-page-content">
+			<header class="low-fi-page-header" w3-include-html="header.html"></header>
+			<section class="subpage-intro">
                 <div class="background-overlay"> <img class="background-icon2"
                         alt src="assets/img/vybaveni-bgimage.png">
                     <div class="overlay2"></div>
@@ -31,143 +34,134 @@
                     </p>
                 </div>
             </section>
-
-            <section class="row">
-                <div class="vybaveni-list">
-                    <div class="vybaveni-item">
-                        <img
-                            class="vybaveni-img" alt
-                            src="assets/img/vybaveni-placeholder-boso.png">
-                        <h4>BOSO ABI 100</h4>
-                        <p>BOSO ABI 100 (měření kotníkových tlaků) je přístroj k
+			<section class="services">
+				<div class="services-list">
+					<div class="tabs">
+						<div class="tab" onclick="openTab(event, 'BOSO')" id="defaultOpen">
+							<div class="service-list-icon-container"> <img
+									class="service-feature-icon"
+									loading="lazy" alt
+									src="assets/img/pristroj.svg">
+							</div>
+							<div class="service-descriptions">
+								BOSO ABI 100
+							</div>
+						</div>
+						<div class="tab" onclick="openTab(event, 'EKG')">
+							<div class="service-list-icon-container"> <img
+									class="service-feature-icon"
+									loading="lazy" alt
+									src="assets/img/pristroj2.svg"> </div>
+							<div class="service-descriptions">
+								EKG
+							</div>
+						</div>				
+						<div class="tab" onclick="openTab(event, 'Holter')">
+							<div class="service-list-icon-container"> <img
+									class="service-feature-icon"
+									loading="lazy" alt
+									src="assets/img/pristroj.svg"> </div>
+							<div class="service-descriptions">
+								Tlakový Holter
+							</div>
+						</div>				
+						<div class="tab" onclick="openTab(event, 'Thermokauter')">
+							<div class="service-list-icon-container"> <img
+									class="service-feature-icon"
+									loading="lazy" alt
+									src="assets/img/pristroj.svg"> </div>
+							<div class="service-descriptions">
+								Thermokauter
+							</div>
+						</div>	
+						<div class="tab" onclick="openTab(event, 'URI')">
+							<div class="service-list-icon-container"> <img
+									class="service-feature-icon"
+									loading="lazy" alt
+									src="assets/img/pristroj.svg"> </div>
+							<div class="service-descriptions">
+								Močový analyzátor URI TEX
+							</div>
+						</div>	
+						<div class="tab" onclick="openTab(event, 'Spirometr')">
+							<div class="service-list-icon-container"> <img
+									class="service-feature-icon"
+									loading="lazy" alt
+									src="assets/img/pristroj.svg"> </div>
+							<div class="service-descriptions">
+								Spirometr Medikro DUO
+							</div>
+						</div>	
+						<div class="tab" onclick="openTab(event, 'Poly')">
+							<div class="service-list-icon-container"> <img
+									class="service-feature-icon"
+									loading="lazy" alt
+									src="assets/img/pristroj.svg"> </div>
+							<div class="service-descriptions">
+								Poly Watch (minitoring spánkové apnoe)
+							</div>
+						</div>	
+						<div class="tab" onclick="openTab(event, 'POCT')">
+							<div class="service-list-icon-container"> <img
+									class="service-feature-icon"
+									loading="lazy" alt
+									src="assets/img/pristroj.svg"> </div>
+							<div class="service-descriptions">
+								STANDARD F200 POCT analyzátor
+							</div>
+						</div>						
+					</div>	
+					
+					<div class="tabcontent" id="BOSO">
+						<p class="bold">BOSO ABI 100</p>
+						<p>BOSO ABI 100 (měření kotníkových tlaků) je přístroj k
                             včasné detekci ischemické choroby dolních končetin.
                             Umožňuje současné měření krevního tlaku horních a
                             dolních končetin manžetami. Rozdílné hodnoty na
-                            končetinách upozorňují na možnost zúžení tepen.
-                            <br />
-                            <br />
-                            Přístroj využíváme jak screeningově, v rámci
+                            končetinách upozorňují na možnost zúžení tepen.</p>
+						<p>Přístroj využíváme jak screeningově, v rámci
                             pravidelných kontrol diabetiků a rizikových
                             hypertoniků, tak k vyloučení nemoci při bolestech
-                            dolních končetin.
-                        </p>
-                    </div>
-                    <div class="vybaveni-item">
-                        <img
-                            class="vybaveni-img" alt
-                            src="assets/img/vybaveni-placeholder-ekg.png">
-                        <h4>EKG</h4>
-                        <p>Standardní 12 svodové EKG snímá elektrickou aktivitu
-                            srdce v čase pomocí elektrod umístěných na hrudi a
-                            končetinách. EKG provádíme k vyloučení poškození
-                            srdečního svalu jak u akutních obtíží, tak v rámci
-                            preventivních prohlídek.
-                            <br />
-                            <br />
-                            U prevencí jej provádíme od 40 let ve 4-letých
-                            intervalech, u pacientů léčených s vysokým tlakem a
-                            cukrovkou v rámci dispenzarizace každý rok.
-                            <br />
-                            <br />
-                            Plánovaně jej provádíme u pacientů přes operací.
+                            dolních končetin.</p>
+						<img class="vybaveni-img" alt src="assets/img/vybaveni-placeholder-boso.png">						
+					</div>
 
-                        </p>
-                    </div>
-                    <div class="vybaveni-item">
-                        <img
-                            class="vybaveni-img" alt
-                            src="assets/img/vybaveni-placeholder-holter.png">
-                        <h4>Tlakový Holter</h4>
-                        <p>Tlakový Holter zaznamenává krevního tlak v určitých
-                            intervalech. Vyšetření se využívá k upřesnění
-                            diagnózy a k posouzení účinnosti léčby vysokého
-                            krevního tlaku. Přístroj se skládá z manžety
-                            tonometru, která se umístí na paži, a malého
-                            automatického tlakoměru, který je schován v pouzdře
-                            na opasku. Během vyšetření provozuje pacient své
-                            běžné činnosti.
+					<div class="tabcontent" id="POCT">
+						<p class="bold">STANDARD F200 POCT analyzátor</p>
+						<p>POCT (point of care testing) metodami vyhodnocujeme vzorky (nejčastěji krve, stolice, stěr z hrdla) bez nutnosti odeslání do laboratoře. 
+							Lékař má k dispozici výsledek do několika minut. V naší ambulanci využíváme POCT analyzátory v následujících měřeních:</p>
+						<div class="spte-v-pjemnm-prosted-container">
+							<ul class="spte-v-pjemnm-prosted-p">
+								<li class="spte-v-pjemnm-prosted"> vyšetření CRP – vzorek kapilární krve, hodnota výsledku nám hrubě odlišuje bakteriální a virové infekce </li>
+								<li class="spte-v-pjemnm-prosted"> vyšetření glykovaného hemoglobinu – kapka krve, stanovení dlouhodobého cukru využíváme při sledování diabetiků</li>
+								<li class="spte-v-pjemnm-prosted"> vyšetření TOKS - moderní imunochemický test umožňuje kvantitativně hodnotit přítomnost krve ve stolici, které je součástí screeningu rakoviny tlustého střeva </li>
+								<li class="spte-v-pjemnm-prosted"> Streptest – jde o vyšetření streptokokového antigenu (streptokoky A) ze vzorku získaného výtěrem z krku </li>
+								<li class="spte-v-pjemnm-prosted"> vyšetření D-dimerů – využíváme k vyloučení některých onemocnění spojených se srážením krve (hluboká žilní trombóza, plicní embolie) </li>
+								<li class="spte-v-pjemnm-prosted"> vyšetření troponinu - koncentrace troponinu v krvi se zvyšuje při postižení srdečního svalu a výsledek nám slouží zejména při bolestech na hrudi k vyloučení srdečního infarktu </li>
+								<li class="spte-v-pjemnm-prosted"> vyšetření proBNP -  marker srdečního selhávání provádíme u pacientů s dušností </li>
+							</ul>							
+						</div>
+						<img class="vybaveni-img" alt src="assets/img/F200.png">						
+					</div>
+				</div>
+			</section>
+			<footer class="lo-fi-ux-footer" w3-include-html="footer.html"></footer>
+		</div>
+		<script>
+			window.onload = function () {
+				// Get the element with id="" and click on it
+				document.getElementById("defaultOpen").click();
 
-                        </p>
-                    </div>
-                    <div class="vybaveni-item">
-                        <img
-                            class="vybaveni-img" alt
-                            src="assets/img/vybaveni-placeholder-thermokauter.png">
-                        <h4>Thermokauter</h4>
-                        <p>Thermokauter využíváme ke kauterizaci (pálení) tkáně
-                            a cév během drobných chirurgických zákroků. Jedná se
-                            jednoduchý přístroj s baterkou a vyměnitelnými
-                            sterilizovatelnými čepelmi.
-                            <br /><br />
-                            Slouží k odstranění kožních výrustků (tzv. fibromů).
-
-                        </p>
-                    </div>
-                    <div class="vybaveni-item">
-                        <img
-                            class="vybaveni-img" alt
-                            src="assets/img/vybaveni-placeholder-uri.png">
-                        <h4>Močový analyzátor URI TEX</h4>
-                        <p>URI TEX je přístroj k semikvantitativnímu vyhodnocení
-                            močových diagnostických proužků. Přístroj provádí
-                            kompletní močovou analýzu včetně přítomnosti
-                            albuminu a kreatininu v moči u diabetiků.
-                            <br /><br />
-                            Výsledky jsou ihned z přístroje přeneseny do
-                            počítače.                            
-                        </p>
-                </div>
-
-                <div class="vybaveni-item">
-                    <img
-                            class="vybaveni-img" alt
-                            src="assets/img/duo1.png">
-                    <h4>Spirometr Medikro DUO</h4>  
-                    <p>Spirometr v ambulanci využíváme k orientačnímu 
-                        vyšetření plicních funkcí k vyloučení astmatu 
-                        a ke screeningu chronické obstrukční plicní nemoci. 
-                        Vyšetření využíváme jak u kuřáků, tak u pacientů s déle trvajícím nebo záchvatovitým kašlem. Software nám umožňuje zaznamenat výsledky vyšetření do počítačové dokumentace. 
-                                   
-                    </p>
-                </div> 
-                <div class="vybaveni-item"> 
-                    <img class="vybaveni-img" alt src="assets/img/apnoes.png">
-                    <h4>Poly Watch (minitoring spánkové apnoe)</h4>  
-                    <p>Poly Watch je mobilní diagnostický přístroj 
-                    na zápěstí pro monitoring spánkové apnoe z pohodlí domácího prostředí. 
-                    Spánková apnoe je poměrně vážná porucha
-                    spánku, při které pacient během spánku špatně 
-                    okysličuje tělo a následně se cítí unavený. 
-                    Přístroj obsahuje prstové čidlo k monitoraci 
-                    okysličení těla a nosní čidlo k monitoraci dechu. 
-                    </p>
-                </div>
-
-                <div class="vybaveni-item"> 
-                    <img class="vybaveni-img" alt src="assets/img/F200.png"> 
-           
-                    <h4>STANDARD F200 POCT analyzátor</h4>  
-                    <p>POCT (point of care testing) metodami vyhodnocujeme vzorky (nejčastěji krve, stolice, stěr z hrdla) bez nutnosti odeslání do laboratoře. 
-                        Lékař má k dispozici výsledek do několika minut. V naší ambulanci využíváme POCT analyzátory v následujících měřeních:                        
-                        <ul>
-                            <li> vyšetření CRP – vzorek kapilární krve, hodnota výsledku nám hrubě odlišuje bakteriální a virové infekce </li>
-                            <li> vyšetření glykovaného hemoglobinu – kapka krve, stanovení dlouhodobého cukru využíváme při sledování diabetiků</li>
-                            <li> vyšetření TOKS - moderní imunochemický test umožňuje kvantitativně hodnotit přítomnost krve ve stolici, které je součástí screeningu rakoviny tlustého střeva </li>
-                            <li> Streptest – jde o vyšetření streptokokového antigenu (streptokoky A) ze vzorku získaného výtěrem z krku </li>
-                            <li> vyšetření D-dimerů – využíváme k vyloučení některých onemocnění spojených se srážením krve (hluboká žilní trombóza, plicní embolie) </li>
-                            <li> vyšetření troponinu - koncentrace troponinu v krvi se zvyšuje při postižení srdečního svalu a výsledek nám slouží zejména při bolestech na hrudi k vyloučení srdečního infarktu </li>
-                            <li> vyšetření proBNP -  marker srdečního selhávání provádíme u pacientů s dušností </li>
-                        </ul>
-                    </p>
-                </div>                
-            </section>
-
-            <footer class="lo-fi-ux-footer" w3-include-html="footer.html"></footer>
-        </div>
-
-        <script>              
+				// Add an event listener to handle window resizing
+				window.addEventListener("resize", (event) => {
+					document.querySelector(".active").click();
+				});
+			};
+		</script>
+		<script>var e = document.getElementById("image2"); e && e.addEventListener("click", function (e) { window.location.href = "./main-page-content.html" }); var t = document.getElementById("vodText"); t && t.addEventListener("click", function (e) { window.location.href = "./main-page-content.html" }); var o = document.getElementById("poskytovanPeText"); o && o.addEventListener("click", function () { var e = document.querySelector("[data-scroll-to='rowContainer']"); e && e.scrollIntoView({ block: "start", behavior: "smooth" }) }); var n = document.getElementById("domcPeText"); n && n.addEventListener("click", function (e) { window.location.href = "./dum-lekaru-domaci-pece.html" });</script>
+		<script>              
             includeHTML();   
-        </script>    
-    </body>
+        </script>
+	</body>
 
 </html>
