@@ -38,6 +38,7 @@ html {
     flex-flow: wrap;
     gap: 32px 30px;
     width: 1280px;
+    align-items: stretch;
 }
 
 .subpage-intro .background-overlay {
@@ -154,6 +155,11 @@ button:hover {
     gap: var(--gap-5xs);
     flex-direction: row;
     display: flex
+}
+
+.list-row1 {
+    justify-content:left;
+    align-items: unset;
 }
 
 .list, .list2 {
