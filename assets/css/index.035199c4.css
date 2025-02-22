@@ -959,6 +959,20 @@
     font-weight: 300;
     line-height: 20px
 }
+.crop-container {
+    width: 240px;
+    height: 200px;
+    overflow: hidden; /* Skryje části obrázku mimo výřez */
+    position: relative;
+}
+  
+.crop-container img {
+    width: 365px !important;
+    height: 485px !important;
+    position: absolute;
+    top: -75px;
+    left: -63px;
+}
 
 /* .intersect-icon {
     object-fit: contain;
