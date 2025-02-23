@@ -60,16 +60,34 @@
 									class="service-feature-icon" loading="lazy" alt
 									src="assets/img/onemocneni.svg"> </div>
 							<div class="service-descriptions">
-								Sledování (dispenzarizace) onemocnění
+								Sledování a dispenzarizace  
 							</div>
 						</div>
-						<div class="tab" onclick="openTab(event, 'Posudek')">
+						<div class="tab" onclick="openTab(event, 'Ockovani')">
+							<div class="service-list-icon-container"> <img
+									class="service-feature-icon"
+									alt
+									src="assets/img/ockovani.svg"> </div>
+							<div class="service-descriptions">
+								Očkování
+							</div>
+						</div>
+						<div class="tab" onclick="openTab(event, 'Chirurgie')">
+							<div class="service-list-icon-container"> <img
+									class="service-feature-icon" alt
+									src="assets/img/chirurgie.svg">
+							</div>
+							<div class="service-descriptions">
+								Chirurgická a převazová péče
+							</div>
+						</div>
+						<div class="tab" onclick="openTab(event, 'Infuze')">
 							<div class="service-list-icon-container"> <img
 									class="service-feature-icon"
 									loading="lazy" alt
-									src="assets/img/posudek.svg"> </div>
+									src="assets/img/stacionar.svg"> </div>
 							<div class="service-descriptions">
-								Posudek na řidičský průkaz
+								Infůzní stacionář
 							</div>
 						</div>
 						<div class="tab" onclick="openTab(event, 'Predoperacni')">
@@ -81,6 +99,15 @@
 								Předoperační vyšetření
 							</div>
 						</div>
+						<div class="tab" onclick="openTab(event, 'Posudek')">
+							<div class="service-list-icon-container"> <img
+									class="service-feature-icon"
+									loading="lazy" alt
+									src="assets/img/posudek.svg"> </div>
+							<div class="service-descriptions">
+								Posudek na řidičský a zbrojní průkaz
+							</div>
+						</div>						
 						<div class="tab" onclick="openTab(event, 'Neschopnost')">
 							<div class="service-list-icon-container"> <img
 									class="service-feature-icon" loading="lazy" alt
@@ -97,34 +124,16 @@
 							<div class="service-descriptions">
 								Návrh na lázeňskou péči
 							</div>
-						</div>
-						<div class="tab" onclick="openTab(event, 'Ockovani')">
-							<div class="service-list-icon-container"> <img
-									class="service-feature-icon"
-									alt
-									src="assets/img/ockovani.svg"> </div>
-							<div class="service-descriptions">
-								Očkování
-							</div>
-						</div>
-						<div class="tab" onclick="openTab(event, 'Infuze')">
+						</div>	
+						<div class="tab" onclick="openTab(event, 'Firmy')">
 							<div class="service-list-icon-container"> <img
 									class="service-feature-icon"
 									loading="lazy" alt
-									src="assets/img/stacionar.svg"> </div>
+									src="assets/img/firma2.svg"> </div>
 							<div class="service-descriptions">
-								Infůzní stacionář
+								Firemní péče
 							</div>
-						</div>
-						<div class="tab" onclick="openTab(event, 'Chirurgie')">
-							<div class="service-list-icon-container"> <img
-									class="service-feature-icon" alt
-									src="assets/img/chirurgie.svg">
-							</div>
-							<div class="service-descriptions">
-								Chirurgická a převazová péče
-							</div>
-						</div>
+						</div>								
 					</div>
 					<div class="tabcontent" id="Odbery">
 						<p class="bold">Odběry krve se provádí na sesterně mezi 6-8 hodinou ráno.</p>
@@ -151,6 +160,8 @@
 					</div>
 					<div class="tabcontent" id="Prohlidky">
 						<p class="bold">Smyslem preventivních prohlídek je předcházení onemocnění a jejich diagnostika, kdy Vám nezpůsobují žádné obtíže.</p>
+						<p>Účastníme se všech preventivních programů v ČR.  Screening nádorů tlustého střeva, nádorů prsu u žen a nádoru prostaty u mužů.  Screening rakoviny plic u kuřáků. Screening demence seniorů. Screeningu osteoporózy od roku 2023. Program detekce aneuryzmatu aorty nově pro muže od roku 2025. </p>
+						<p>Screening aneurysmatu abdominální aorty, koordinovaný Národním screeningovým centrem, vznikl ve spolupráci s předními odborníky v oblasti radiologie, angiologie a kardiovaskulární chirurgie. Jeho cílem je časné odhalení a léčba této potenciálně nebezpečné výdutě břišní aorty pomocí neinvazivního ultrazvukového vyšetření. Screeningové vyšetření bude zaměřeno na nejrizikovější skupinu pacientů, konkrétně muže ve věku 65–67 let.</p>
 						<p>Prohlídkou pravidelné zjišťujeme a hodnotíme Váš zdravotní stav, doporučujeme preventivní opatření k udržení zdraví do vysokého věku. Rozsah, frekvence a poskytovatelé zdravotních služeb, kteří provádějí preventivní prohlídky, jsou uvedeny ve vyhlášce č. 70/2012 Sb., o preventivních prohlídkách. Všeobecný praktický lékař provádí tzv. všeobecné preventivní prohlídky 1× za 2 roky, nejdříve po uplynutí 23 měsíců po poslední. Prohlídka je plně hrazena zdravotní pojišťovnou.</p>
 						<p>Na možnost absolvování hrazené preventivní prohlídky jste upozornění automaticky mailem. Objednáte se prostřednictvím portálu sestru EMMY anebo na recepci. Před termínem vyšetření je nutné bez objednání přijít lačný k odběru krve a moče nalačno mezi 6-8 hodinou ráno min 2 dny předem.</p>
 						<p class="bold">Rozsah preventivní prohlídky všeobecného praktického lékaře:</p>
@@ -202,8 +213,7 @@
 					<div class="tabcontent" id="Sledovani">
 						<p class="bold">Sledování (dispenzarizace) onemocnění</p>
 
-						<p>Dispenzarizace je odborná lékařská péče, jejímž účelem je systematické dlouhodobé sledování stavu pacienta ohroženého nebo trpícího nemocí, s cílem předcházení zdravotním komplikacím. Nemoci určené k dispenzarizaci jsou stanoveny podle § 120 zákona č. 372/2011 Sb. Prohlídky jsou provedeny nejméně 1x ročně. Mezi nejčastější nemoci sledované v ambulanci praktického lékaře patří cukrovka, vysoký tlak, vysoký cholesterol, nedostatečná funkce štítné žlázy, obezita, dna, chudokrevnost, poruchou funkce ledvin apod. Na dispenzární prohlídku se objednáte prostřednictvím portálu sestra EMMY anebo na recepci.</p>
-						
+						<p>Dispenzarizace je odborná lékařská péče, jejímž účelem je systematické dlouhodobé sledování stavu pacienta ohroženého nebo trpícího nemocí, s cílem předcházení zdravotním komplikacím. Prohlídky jsou prováděny nejméně 1x ročně. Na dispenzární prohlídku se objednáte prostřednictvím portálu sestra EMMY anebo na recepci.</p>
 						<p class="bold">Prediabetes</p>
 						<p>Prediabetes předchází rozvoji cukrovky (DM) a je definován zvýšenou hladinou cukru nalačno v krvi v rozmezí 5,6-6,9 mmol/l. Diagnostika může být také provedena tolerančního testu cukru v laboratoři. Prediabetes představuje zvýšené riziko kardiovaskulárních onemocnění, a stejně jako DM je spojen s vyššími riziky onkologických nemocí. U jedince s prediabetem se obvykle vyskytuji další interní nemoci metabolického syndromu (vysoký tlak, zvýšené množství tuků v krvi, obezita). Jedná se o možný reverzibilní stav a jeho léčba je proto velmi důležitá.  Základem terapie je úprava životního režimu a redukce váhy.  Hladina cukru je Vám kontrolována při každé preventivní prohlídce.</p>
 						<p>Dispenzarizace se provádí 2x ročně. Před každou prohlídkou je Vám odebrána krev a stanovena váha a obvod pasu.  Jednou ročně Vám provedeme celkové interní a neurologické vyšetření společně s EKG a kontrolou citlivosti chodidel ladičkou k vyloučení neuropatie.</p>
@@ -402,6 +412,27 @@
 						<p class="bold">Naše společnost poskytuje pro registrované pacienty možnost základní péče ve všeobecné chirurgii.</p>
 						<p>Provádíme běžné převazy, odstranění drobných kožních výrůstků, vytažení stehů i ambulantní drobné akutní zákroky.</p>
 						<p>Převazy jsou prováděny zkušenou chirurgickou sestrou po objednání. Ostatní výkony jsou prováděny po domluvě s lékařem. Registrovaným pacientům poskytujeme základní konzultaci k operacím včetně možného anesteziologické stanoviska.</p>
+					</div>
+
+					<div class="tabcontent" id="Firmy">
+						<p>Cílem závodní preventivní péče je zabezpečit ve spolupráci se zaměstnavatelem prevenci, včetně ochrany zdraví zaměstnanců před nemocemi z povolání a jinými poškozeními zdraví z práce a prevenci úrazů. Firemní péči poskytujeme smluvním partnerům v plném rozsahu. V případě registrovaných pacientů můžeme provést pouze závodní prohlídky hodnocené kategorií 1 bez rizikových faktorů dle zákona. Neváhejte nás kontaktovat.</p>
+						<p>Zaměstnanci jsou povinni, podle zákoníku práce č.262/2006 v platném znění, podrobit se lékařským prohlídkám. Zaměstnavatel je dle Zákona 20/1966 Sb. O péči o zdraví lidu povinen zajistit zařízení závodně preventivní péče a je povinen sdělit zaměstnancům, o jaké zařízení jde. Zaměstnanec je povinen se podrobit pracovně lékařským prohlídkám, vyšetřením, očkováním. Volba zařízení závodní preventivní péče je plně v kompetenci zaměstnavatele a pro zaměstnance je vyjmuta ze svobodné volby lékaře.</p>
+						<p>Nabízíme několik možností péče o firemní klientelu – od základní závodní preventivní péče, vyžadované zákonnými předpisy, až po nadstandardní péči podle individuálních požadavků klienta. Čeká Vás příjemné moderní prostředí, profesionální přístup a kvalitní péče.</p>
+						<p>V rámci závodně preventivní péče jsme připraveni pro Vás zajistit tyto služby:</p>
+						<div class="prohlen-idie-ke-container">
+							<ul class="prohlen-idie-ke-sv-zdrav">
+								<li class="prohlen-idie-ke"> povinné vstupní a výstupní prohlídky </li>
+								<li class="lkask-prohldky-se"> poradní činnost v otázkách ochrany a podpory zdraví </li>
+								<li class="lkask-prohldky-se"> odborná kontrola pracovišť </li>
+								<li class="lkask-prohldky-se"> sledování vlivu práce a pracovních podmínek na zdravotní stav zaměstnanců</li>
+								<li class="lkask-prohldky-se"> preventivní prohlídky povinné dle platných právních předpisů a prohlídky vyžádané nad tento rámec zaměstnavatelem </li>
+								<li class="lkask-prohldky-se"> mimořádné a následné prohlídky ze zdravotních důvodů </li>
+								<li class="lkask-prohldky-se"> dispenzární prohlídky při nemocech z povolání </li>
+								<li class="lkask-prohldky-se"> organizování první pomoci a podíl na zdravotní výchově a výcviku zaměstnanců </li>
+								<li class="lkask-prohldky-se"> spolupráce s hygienickou službou </li>
+								<li class="lkask-prohldky-se"> účast na rozboru pracovní neschopnosti a pracovní úrazovosti </li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>			
