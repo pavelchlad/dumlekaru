@@ -1079,6 +1079,9 @@ button:hover {
 .tabcontent p.bold {
 	font-weight: 600;
 }
+.tabcontent p.underline {
+	text-decoration: underline;
+}
 .tabcontent li {
 	text-align: justify;
 }
