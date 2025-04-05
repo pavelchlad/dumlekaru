@@ -396,7 +396,7 @@ button:hover {
 
 .image-23-icon {
 	border-radius: var(--br-xl);
-    padding-top: var(--padding-13xl);
+    margin-top: var(--padding-13xl);
 }
 
 /* HEADER */
