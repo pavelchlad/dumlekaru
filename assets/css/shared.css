@@ -136,7 +136,11 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    display: flex
+    display: flex;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    font-family: var(--font-inter);
+    text-align: left;
 }
 
 button:hover {
@@ -608,6 +612,10 @@ button:hover {
 .nov-jin1,
 .p1 {
     margin: 0
+}
+
+.mb-0 {
+    margin-bottom: 0;
 }
 
 .footer-links {
