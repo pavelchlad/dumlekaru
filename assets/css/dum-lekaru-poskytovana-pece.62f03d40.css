@@ -201,7 +201,7 @@ hr {
 	text-decoration: underline;
 }
 
-.tabcontent img:not(.store-badge) {
+.tabcontent img.poskytovana-pece-img {
     max-width: 450px;
     border-radius: 20px;
     border: 1px solid #E6E9EC;
@@ -347,9 +347,8 @@ li.expandable-item {
 		margin-top: -6px;
 	}
 
-	.tabcontent img {
-        max-width: 200px;
-        height: 133px;
+	.tabcontent img.poskytovana-pece-img {
+        max-width: 250px;
     }
 }
 
