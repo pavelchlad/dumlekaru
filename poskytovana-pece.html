@@ -44,7 +44,7 @@
 								Odběry
 							</div>
 						</div>
-						<div class="tab" onclick="openTab(event, 'Prohlidky')">
+						<div class="tab" onclick="openTab(event, 'Prohlidky', true)">
 							<div class="service-list-icon-container"> <img
 									class="service-feature-icon"
 									loading="lazy" alt
@@ -53,7 +53,7 @@
 								Preventivní prohlídky
 							</div>
 						</div>
-						<div class="tab" onclick="openTab(event, 'Sledovani')">
+						<div class="tab" onclick="openTab(event, 'Sledovani', true)">
 							<div class="service-list-icon-container"> <img
 									class="service-feature-icon" loading="lazy" alt
 									src="assets/img/onemocneni.svg"> </div>
@@ -61,7 +61,7 @@
 								Sledování a dispenzarizace  
 							</div>
 						</div>
-						<div class="tab" onclick="openTab(event, 'Ockovani')">
+						<div class="tab" onclick="openTab(event, 'Ockovani', true)">
 							<div class="service-list-icon-container"> <img
 									class="service-feature-icon"
 									alt
@@ -70,7 +70,7 @@
 								Očkování
 							</div>
 						</div>
-						<div class="tab" onclick="openTab(event, 'Chirurgie')">
+						<div class="tab" onclick="openTab(event, 'Chirurgie', true)">
 							<div class="service-list-icon-container"> <img
 									class="service-feature-icon" alt
 									src="assets/img/chirurgie.svg">
@@ -79,7 +79,7 @@
 								Chirurgická a převazová péče
 							</div>
 						</div>
-						<div class="tab" onclick="openTab(event, 'Infuze')">
+						<div class="tab" onclick="openTab(event, 'Infuze', true)">
 							<div class="service-list-icon-container"> <img
 									class="service-feature-icon"
 									loading="lazy" alt
@@ -88,7 +88,7 @@
 								Infůzní stacionář
 							</div>
 						</div>
-						<div class="tab" onclick="openTab(event, 'Predoperacni')">
+						<div class="tab" onclick="openTab(event, 'Predoperacni', true)">
 							<div class="service-list-icon-container"> <img
 									class="service-feature-icon"
 									loading="lazy" alt
@@ -97,7 +97,7 @@
 								Předoperační vyšetření
 							</div>
 						</div>
-						<div class="tab" onclick="openTab(event, 'Posudek')">
+						<div class="tab" onclick="openTab(event, 'Posudek', true)">
 							<div class="service-list-icon-container"> <img
 									class="service-feature-icon"
 									loading="lazy" alt
@@ -106,7 +106,7 @@
 								Posudek na řidičský a zbrojní průkaz
 							</div>
 						</div>						
-						<div class="tab" onclick="openTab(event, 'Neschopnost')">
+						<div class="tab" onclick="openTab(event, 'Neschopnost', true)">
 							<div class="service-list-icon-container"> <img
 									class="service-feature-icon" loading="lazy" alt
 									src="assets/img/neshcopnost.svg"> </div>
@@ -114,7 +114,7 @@
 								Dočasná pracovní neschopnost
 							</div>
 						</div>
-						<div class="tab" onclick="openTab(event, 'Lazne')">
+						<div class="tab" onclick="openTab(event, 'Lazne', true)">
 							<div class="service-list-icon-container"> <img
 									class="service-feature-icon"
 									loading="lazy" alt
@@ -123,7 +123,7 @@
 								Návrh na lázeňskou péči
 							</div>
 						</div>	
-						<div class="tab" onclick="openTab(event, 'Firmy')">
+						<div class="tab" onclick="openTab(event, 'Firmy', true)">
 							<div class="service-list-icon-container"> <img
 									class="service-feature-icon"
 									loading="lazy" alt
@@ -136,26 +136,25 @@
 					<div class="tabcontent" id="Odbery">
 						<p class="bold">Odběry krve se provádí na sesterně mezi 6-8 hodinou ráno.</p>
 						<p class="bold">Nemusíte se objednávat na předem domluvené nebo pravidelné odběry včetně preventivní prohlídky. Neplánované odběry je nutné zkonzultovat! </p>
-						<p class="bold">Po vstupu do čekárny se nahlásíte ve vyvolávacím systému kartičkou pojišťovny, zvolíte odběry a vyčkáte vyvolání.</p>					
-						<div class="prohlen-idie-ke-container">
-							<ol class="prohlen-idie-ke-sv-zdrav">
-								<li class="prohlen-idie-ke">
-									Krev - odběr krve se provádí nalačno po min 8 hodinové lačnění (odběry krevních tuků, cukru, preventivní prohlídka). Před odběrem není vhodná fyzická aktivita a před odběrem doporučujeme vypít ¼ litru čisté vody. 
-								</li>
-								<li class="lkask-prohldky-se">
-									Moč - odebírá se střední proud ranní moče do sterilní nádobky. Zkumavku Vám vydá dopředu sestra. 
-								</li>
-								<li class="lkask-prohldky-se">
-									Stěry – stěr z krku provádí lékař.  Provádíme tzv. streptesty (okamžitá detekce streptokoka k ATB léčbě) a stěr k mikrobiologickému vyšetření (stěr z konečníku, kůže, hnisu, apod).
-								</li>
-								<li class="lkask-prohldky-se">
-									Sputum – hlen z dýchacích test pacient vykašle do odběrové sterilní nádobky pro laboratoř ke stanovení citlivosti na antibiotika.
-								</li>
-								<li class="lkask-prohldky-se">
-									Stolice – vzorek k vyloučnení parazitáního onemocněná je proveden pacientem doma do speciální nádobky, vydáné na sesterně. Perianální otisk se prování k vylouční hlístice
-								</li>
-							</ol>
-						</div>
+						<p class="bold">Po vstupu do čekárny se nahlásíte ve vyvolávacím systému kartičkou pojišťovny, zvolíte odběry a vyčkáte vyvolání.</p>
+						<ol>
+							<li>
+								Krev - odběr krve se provádí nalačno po min 8 hodinové lačnění (odběry krevních tuků, cukru, preventivní prohlídka). Před odběrem není vhodná fyzická aktivita a před odběrem doporučujeme vypít ¼ litru čisté vody. 
+							</li>
+							<li>
+								Moč - odebírá se střední proud ranní moče do sterilní nádobky. Zkumavku Vám vydá dopředu sestra. 
+							</li>
+							<li>
+								Stěry – stěr z krku provádí lékař.  Provádíme tzv. streptesty (okamžitá detekce streptokoka k ATB léčbě) a stěr k mikrobiologickému vyšetření (stěr z konečníku, kůže, hnisu, apod).
+							</li>
+							<li>
+								Sputum – hlen z dýchacích test pacient vykašle do odběrové sterilní nádobky pro laboratoř ke stanovení citlivosti na antibiotika.
+							</li>
+							<li>
+								Stolice – vzorek k vyloučnení parazitáního onemocněná je proveden pacientem doma do speciální nádobky, vydáné na sesterně. Perianální otisk se prování k vylouční hlístice
+							</li>
+						</ol>
+						<img class="poskytovana-pece-img" loading="lazy" alt="" src="assets/img/kiosek v cekarne.png">
 					</div>
 					<div class="tabcontent" id="Prohlidky">
 						<p class="bold">Smyslem preventivních prohlídek je předcházení onemocnění a jejich diagnostika, kdy Vám nezpůsobují žádné obtíže.</p>
@@ -163,60 +162,68 @@
 						<p>Screening aneurysmatu abdominální aorty, koordinovaný Národním screeningovým centrem, vznikl ve spolupráci s předními odborníky v oblasti radiologie, angiologie a kardiovaskulární chirurgie. Jeho cílem je časné odhalení a léčba této potenciálně nebezpečné výdutě břišní aorty pomocí neinvazivního ultrazvukového vyšetření. Screeningové vyšetření bude zaměřeno na nejrizikovější skupinu pacientů, konkrétně muže ve věku 65–67 let.</p>
 						<p>Prohlídkou pravidelné zjišťujeme a hodnotíme Váš zdravotní stav, doporučujeme preventivní opatření k udržení zdraví do vysokého věku. Rozsah, frekvence a poskytovatelé zdravotních služeb, kteří provádějí preventivní prohlídky, jsou uvedeny ve vyhlášce č. 70/2012 Sb., o preventivních prohlídkách. Všeobecný praktický lékař provádí tzv. všeobecné preventivní prohlídky 1× za 2 roky, nejdříve po uplynutí 23 měsíců po poslední. Prohlídka je plně hrazena zdravotní pojišťovnou.</p>
 						<p>Na možnost absolvování hrazené preventivní prohlídky jste upozornění automaticky mailem. Objednáte se prostřednictvím portálu sestru EMMY anebo na recepci. Před termínem vyšetření je nutné bez objednání přijít lačný k odběru krve a moče nalačno mezi 6-8 hodinou ráno min 2 dny předem.</p>
+						<hr>
 						<p class="bold">Rozsah preventivní prohlídky všeobecného praktického lékaře:</p>
-						<div class="prohlen-idie-ke-container">
-							<ol class="prohlen-idie-ke-sv-zdrav">
-								<li class="prohlen-idie-ke">
-									Odběr krve k vyšetření cholesterolu (ve 30, 40, 50 a 60 letech), glykémie (od 40 let á 2 roky).  Další testy v závislosti na současné léčbě, zdravotních obtížích a riziku nemoci.
-								</li>
-								<li class="lkask-prohldky-se">
-									Vyšetření ranní moče chemicky z odběrové zkumavky v množství cca 50 ml.
-								</li>
-								<li class="lkask-prohldky-se">
-									Natočení EKG (od 40 let á 4 roky).
-								</li>
-								<li class="lkask-prohldky-se">
-									Orientační vyšetření smyslů (zraku, sluchu) se stanovením výšky a váhy se provádí na sesterně. 
-								</li>
-								<li class="lkask-prohldky-se">
-									Vyšetření lékařem v naší ordinaci začínáme pohovorem o zdravotním stavu (bio-psycho-sociální zdraví), aktualizujeme zdravotní dokumentaci (při léčbě specialisty, přinesete poslední lékařské zprávy), zkontrolujeme stav očkování a naplánujeme screeningové vyšetření. Následuje celkové fyzikální vyšetření (pohledem, pohmatem, poslechem, poklepem). Na závěr prohlídky jsou zhodnoceny výsledky a dáno doporučení k udržení plného zdraví.
-								</li>
-								<li class="lkask-prohldky-se">
-									Screening (metody vyhledávání nemoci, které nezpůsobují žádné obtíže):
-									<ul class="prohlen-idie-ke-sv-zdrav">
-										<li class="lkask-prohldky-se">
-											<b>Nádory tlustého střeva</b> - od 50 do 55 let – test na skryté krvácení ve stolici (i-TOKS) výsledek je znám přímo v ordinaci 1× za rok, od 55 let se pacient(ka) může rozhodnout, kterou variantu screeningu podstoupí (i-TOKS (viz výše) 1× za 2 roky nebo koloskopické vyšetření)
-										</li>
-										<li class="lkask-prohldky-se">
-											<b>Nádory prsu u žen</b> - mamografie je hrazena zdravotní pojišťovnou od 45 let 1× za 2 roky. Vyšetření provádí akreditované screeningové centrum AGEL Diagnostické centrum Nový Jičín.
-										</li>
-										<li class="lkask-prohldky-se">
-											<b>Nádory prostaty</b> – odběr specifické bílkoviny v krvi (PSA) ve věku mezi 50-70 lety
-										</li>
-										<li class="lkask-prohldky-se">
-											<b>Nádory plic</b> – kuřáci, kteří splňující kritéria, jsou mezi 55-75 lety odeslání na specializované plicní vyšetření 
-										</li>
-										<li class="lkask-prohldky-se">
-											<b>Screening stařecké demence</b> u pacientů ve věku 65-80 let 
-										</li>
-										<li class="lkask-prohldky-se">
-											<b>Screening  osteoporózy</b> u pacientů v riziku - odeslání na měření kostní hustoty (denzitometrii).
-										</li>
-										<li class="lkask-prohldky-se">
-											<b>Screening abdominální aorty</b> u mužů ve věku 65-67 
-										</li>
-									</ul>
-								</li>
-							</ol>
+						<ol>
+							<li>
+								Odběr krve k vyšetření cholesterolu (ve 30, 40, 50 a 60 letech), glykémie (od 40 let á 2 roky).  Další testy v závislosti na současné léčbě, zdravotních obtížích a riziku nemoci.
+							</li>
+							<li >
+								Vyšetření ranní moče chemicky z odběrové zkumavky v množství cca 50 ml.
+							</li>
+							<li >
+								Natočení EKG (od 40 let á 4 roky).
+							</li>
+							<li >
+								Orientační vyšetření smyslů (zraku, sluchu) se stanovením výšky a váhy se provádí na sesterně. 
+							</li>
+							<li >
+								Vyšetření lékařem v naší ordinaci začínáme pohovorem o zdravotním stavu (bio-psycho-sociální zdraví), aktualizujeme zdravotní dokumentaci (při léčbě specialisty, přinesete poslední lékařské zprávy), zkontrolujeme stav očkování a naplánujeme screeningové vyšetření. Následuje celkové fyzikální vyšetření (pohledem, pohmatem, poslechem, poklepem). Na závěr prohlídky jsou zhodnoceny výsledky a dáno doporučení k udržení plného zdraví.
+							</li>
+							<li >
+								Screening (metody vyhledávání nemoci, které nezpůsobují žádné obtíže):
+								<ul>
+									<li >
+										<b>Nádory tlustého střeva</b> - od 50 do 55 let – test na skryté krvácení ve stolici (i-TOKS) výsledek je znám přímo v ordinaci 1× za rok, od 55 let se pacient(ka) může rozhodnout, kterou variantu screeningu podstoupí (i-TOKS (viz výše) 1× za 2 roky nebo koloskopické vyšetření)
+									</li>
+									<li >
+										<b>Nádory prsu u žen</b> - mamografie je hrazena zdravotní pojišťovnou od 45 let 1× za 2 roky. Vyšetření provádí akreditované screeningové centrum AGEL Diagnostické centrum Nový Jičín.
+									</li>
+									<li >
+										<b>Nádory prostaty</b> – odběr specifické bílkoviny v krvi (PSA) ve věku mezi 50-70 lety
+									</li>
+									<li >
+										<b>Nádory plic</b> – kuřáci, kteří splňující kritéria, jsou mezi 55-75 lety odeslání na specializované plicní vyšetření 
+									</li>
+									<li >
+										<b>Screening stařecké demence</b> u pacientů ve věku 65-80 let 
+									</li>
+									<li >
+										<b>Screening  osteoporózy</b> u pacientů v riziku - odeslání na měření kostní hustoty (denzitometrii).
+									</li>
+									<li >
+										<b>Screening abdominální aorty</b> u mužů ve věku 65-67 
+									</li>
+								</ul>
+							</li>
+						</ol>
+						<div class="text-container-white">
+							<p>
+								Pacientům vyžadující dřívější vyšetření společně s podrobnějším laboratorního vyšetření nabízíme možnost absolvovat prohlídku za přímou úhradu (viz. <a href="/cenik.html">ceník</a>). Laboratorní vyšetření je hrazeno zvlášť přímou fakturací spolupracující laboratoří SPADIA. 
+							</p>
 						</div>
-						<p>
-							Pacientům vyžadující dřívější vyšetření společně s podrobnějším laboratorního vyšetření nabízíme možnost absolvovat prohlídku za přímou úhradu (viz. ceník). Laboratorní vyšetření je hrazeno zvlášť přímou fakturací spolupracující laboratoří SPADIA. 
-						</p>
 					</div>
 					<div class="tabcontent" id="Sledovani">
 						<p class="bold">Sledování (dispenzarizace) onemocnění</p>
 
-						<p>Dispenzarizace je odborná lékařská péče, jejímž účelem je systematické dlouhodobé sledování stavu pacienta ohroženého nebo trpícího nemocí, s cílem předcházení zdravotním komplikacím. Prohlídky jsou prováděny nejméně 1x ročně. Na dispenzární prohlídku se objednáte prostřednictvím portálu sestra EMMY anebo na recepci.</p>
+						<p>Dispenzarizace je odborná lékařská péče, jejímž účelem je systematické dlouhodobé sledování stavu pacienta ohroženého nebo trpícího nemocí, s cílem předcházení zdravotním komplikacím. Prohlídky jsou prováděny nejméně 1x ročně.</p>
+						<p>Na dispenzární prohlídku se objednáte prostřednictvím portálu sestra EMMY anebo na recepci.</p>
+						<button
+								onclick="window.open('https://moje.sestraemmy.cz/-/dumlekaru','_blank');"
+								type="button">
+									Kontaktovat sestru EMMY
+							</button>
+						<hr>
 						<p class="bold">Prediabetes</p>
 						<p>Prediabetes předchází rozvoji cukrovky (DM) a je definován zvýšenou hladinou cukru nalačno v krvi v rozmezí 5,6-6,9 mmol/l. Diagnostika může být také provedena tolerančního testu cukru v laboratoři. Prediabetes představuje zvýšené riziko kardiovaskulárních onemocnění, a stejně jako DM je spojen s vyššími riziky onkologických nemocí. U jedince s prediabetem se obvykle vyskytuji další interní nemoci metabolického syndromu (vysoký tlak, zvýšené množství tuků v krvi, obezita). Jedná se o možný reverzibilní stav a jeho léčba je proto velmi důležitá.  Základem terapie je úprava životního režimu a redukce váhy.  Hladina cukru je Vám kontrolována při každé preventivní prohlídce.</p>
 						<p>Dispenzarizace se provádí 2x ročně. Před každou prohlídkou je Vám odebrána krev a stanovena váha a obvod pasu.  Jednou ročně Vám provedeme celkové interní a neurologické vyšetření společně s EKG a kontrolou citlivosti chodidel ladičkou k vyloučení neuropatie.</p>
@@ -247,209 +254,319 @@
 					</div>
 					<div class="tabcontent" data-scroll-to="rowContainer" id="Posudek">
 						<div class="subtitle-wrapper1">
-							<div class="doporuujeme-se-objednat"> Doporučujeme se objednat s časovým
+							<p class="bold mb-0"> Doporučujeme se objednat s časovým
 								předstihem přes portál
-								EMMY anebo na recepci. </div> <button class="horizontal-container15">
-								<div class="low-fi-button6">
-									<div class="kontaktovat-sestru-emmy5"> Kontaktovat sestru EMMY </div>
-								</div>
+								EMMY anebo na recepci.
+							</p>
+							<button
+								onclick="window.open('https://moje.sestraemmy.cz/-/dumlekaru','_blank');"
+								type="button">
+									Kontaktovat sestru EMMY
 							</button>
 						</div>
-						<div class="posudek-se-vydv"> Posudek se vydává se na základě zhodnocení:
-						</div>
-						<div class="prohlen-idie-ke-container">
-							<ul class="prohlen-idie-ke-sv-zdrav">
-								<li class="prohlen-idie-ke"> Prohlášení řidiče ke své zdravotní
-									způsobilosti k řízení
-									motorových vozidel – tento formulář dostanete v naší ordinaci před
-									vyšetřením anebo je
-									možné jej stáhnout na naších internetových stránkách </li>
+						<p class="bold"> Posudek se vydává se na základě zhodnocení:
+						</p>
+						<ul>
+							<li> Prohlášení řidiče ke své zdravotní
+								způsobilosti k řízení
+								motorových vozidel – tento formulář dostanete v naší ordinaci před
+								vyšetřením anebo je
+								možné jej stáhnout na naších internetových stránkách </li>
 
-								<li class="prohlen-idie-ke"> Prohlášení žadatele o zbrojní průkaz o svém zdravotním stavu a užívaných lečivech.  – tento formulář dostanete v naší ordinaci před vyšetření anebo je možné jej stáhnout na naších internetových stránkách</li>
-								<li class="prohlen-idie-ke"> Lékařské prohlídky se zaměřením na
-									celkový zdravotní stav a
-									zejména nemoci vylučující řízení – vyšetřen zahrnuje orientační
-									vyšetření zraku, sluchu
-									a barvocitu. Lékař provádí orientační neurologické a interní vyšetření.
-									U osob nad 65
-									let se vyšetření zahrnuje test mentálního stavu, orientační test
-									schopnosti reaktivity a
-									také zdatnosti seniora. Selektivně se vyžaduje dopravně psychologické
-									vyšetření. </li>
-								<li class="prohlen-idie-ke"> Výsledků odborných nálezů pokud je pacient v soustavné péči pro
-									nemoc, která vylučuje
-									nebo podmiňuje zdravotní způsobilost řízení (zprávy psychiatra,
-									neurologa, kardiologa,
-									diabetologa včetně oční zprávy). Důrazně doporučujeme přinést aktuální
-									nálezy
-									specialistů. </li>
-							</ul>
-						</div>
-						<div class="live-wrapper2">
-							<div class="certificate-dividers"></div>
-						</div>
-						<div class="k-vyeten-a-vystaven"> K vyšetření a vystavení posudku doneste:
-						</div>
-						<div class="platn-obansk-a-container">
-							<ul class="platn-obansk-a-idisk-pr">
-								<li class="platn-obansk-a"> Platný občanský a řidičský průkaz </li>
-								<li class="korekci-zraku-brle"> Korekci zraku (brýle, kontaktní čočky)
-								</li>
-								<li class="vyplnnm-prohlen-idie"> Vyplněným prohlášení řidiče o svém
-									zdravotním stavu </li>
-								<li> Aktuální nálezy odborných lékařů (zejména psychiatr, neurolog,
-									kardiolog, diabetolog,
-									oční) </li>
-							</ul>
-						</div>
-						<div class="live-wrapper3">
-							<div class="live-wrapper-item"></div>
-						</div>
-						<div class="kdo-mus-podstupovat"> Kdo musí podstupovat pravidelné prohlídky? </div>
-						<div class="dritel-idiskho-oprvnn-container">
-							<ul class="dritel-idiskho-oprvnn-s">
-								<li class="dritel-idiskho-oprvnn"> Držitel řidičského oprávnění skupiny
-									1 (AM, A1, A2, A,
-									B1, B a B+E) nejdříve 6 měsíců před 65 rokem a poté v 68 let. Od 68 let
-									se posudek
-									vyžaduje co 2 roky. </li>
-								<li> Řidiči profesionálové a řidiči nákladní dopravy skupiny 2 (C1,
-									C1+E, C, C+E, D+, D1+E).
-									Frekvence se vyžaduje dle aktuálně platné legislativy včetně
-									psychologického vyšetření
-									(zákon č. 361/2000 sb. o provozu na pozemních komunikacích a o změnách
-									některých zákonů
-									(zákon o silničním provozu) </li>
-							</ul>
-						</div>
-						<div class="live-wrapper4">
-							<div class="live-wrapper-inner"></div>
-						</div>
-						<div class="posudek-k-zen-motorovch-container"> Posudek k řízení
+							<li> Prohlášení žadatele o zbrojní průkaz o svém zdravotním stavu a užívaných lečivech.  – tento formulář dostanete v naší ordinaci před vyšetření anebo je možné jej stáhnout na naších internetových stránkách</li>
+							<li> Lékařské prohlídky se zaměřením na
+								celkový zdravotní stav a
+								zejména nemoci vylučující řízení – vyšetřen zahrnuje orientační
+								vyšetření zraku, sluchu
+								a barvocitu. Lékař provádí orientační neurologické a interní vyšetření.
+								U osob nad 65
+								let se vyšetření zahrnuje test mentálního stavu, orientační test
+								schopnosti reaktivity a
+								také zdatnosti seniora. Selektivně se vyžaduje dopravně psychologické
+								vyšetření. </li>
+							<li> Výsledků odborných nálezů pokud je pacient v soustavné péči pro
+								nemoc, která vylučuje
+								nebo podmiňuje zdravotní způsobilost řízení (zprávy psychiatra,
+								neurologa, kardiologa,
+								diabetologa včetně oční zprávy). Důrazně doporučujeme přinést aktuální
+								nálezy
+								specialistů. </li>
+						</ul>
+						<hr>
+						<p class="bold"> K vyšetření a vystavení posudku doneste:
+						</p>
+						<ul>
+							<li> Platný občanský a řidičský průkaz </li>
+							<li> Korekci zraku (brýle, kontaktní čočky)
+							</li>
+							<li> Vyplněným prohlášení řidiče o svém
+								zdravotním stavu </li>
+							<li> Aktuální nálezy odborných lékařů (zejména psychiatr, neurolog,
+								kardiolog, diabetolog,
+								oční) </li>
+						</ul>
+						<hr>
+						<p class="bold"> Kdo musí podstupovat pravidelné prohlídky? </p>
+						<ul>
+							<li> Držitel řidičského oprávnění skupiny
+								1 (AM, A1, A2, A,
+								B1, B a B+E) nejdříve 6 měsíců před 65 rokem a poté v 68 let. Od 68 let
+								se posudek
+								vyžaduje co 2 roky. </li>
+							<li> Řidiči profesionálové a řidiči nákladní dopravy skupiny 2 (C1,
+								C1+E, C, C+E, D+, D1+E).
+								Frekvence se vyžaduje dle aktuálně platné legislativy včetně
+								psychologického vyšetření
+								(zákon č. 361/2000 sb. o provozu na pozemních komunikacích a o změnách
+								některých zákonů
+								(zákon o silničním provozu) </li>
+						</ul>
+						<hr>
+						<p> Posudek k řízení
 							motorových vozidel není hrazen ze
-							zdravotního pojištění (viz. <a href="cenik.html"
-								class="aktuln-platn-cenk">aktuální
-								platný ceník</a>) </div>
-						<div class="row5">
-							<div class="dokumenty-ke-staen">Dokumenty ke stažení</div>
+							zdravotního pojištění (viz. <a href="cenik.html">aktuální
+								platný ceník</a>) </p>
+						<div class="text-container-white">
+							<p class="bold">Dokumenty ke stažení</p>
 							<div class="download-items">
 								<div class="download-item-containers">
 									<div class="download-icon-containers"> <img
 											class="material-symbolsdownload-icon"
 											loading="lazy" alt
 											src="assets/img/materialsymbolsdownload.e2828e58.svg"> </div>
-									<div class="prohlen-posuzovan-osoby"><a href="assets/download/Prohlaseni-zadatele-ke-sve-zdravotni-zpusobilosti-k-drzeni-strelne-zbrane.pdf">Prohlášení posuzované osoby ke
+									<a href="assets/download/Prohlaseni-zadatele-ke-sve-zdravotni-zpusobilosti-k-drzeni-strelne-zbrane.pdf">Prohlášení posuzované osoby ke
 										své zdravotní
-										způsobilosti – řízení motorových vozidel</a> </div>
+										způsobilosti – řízení motorových vozidel</a>
 								</div>
-								<div class="download-item-containers1">
-									<div class="material-symbolsdownload-wrapper"> <img
-											class="material-symbolsdownload-icon1" alt
+								<div class="download-item-containers">
+									<div class="download-icon-containers"> <img
+											class="material-symbolsdownload-icon" alt
 											src="assets/img/materialsymbolsdownload.e2828e58.svg"> </div>
-									<div class="dost-o-posouzen"><a href="assets/download/Žádost_o_posouzení_zdravotní_způsobilosti_k_řízení_motorových_vozidel.pdf">Žádost o posouzení zdravotní způsobilosti
-										k řízení </a></div>
+									<a href="assets/download/Žádost_o_posouzení_zdravotní_způsobilosti_k_řízení_motorových_vozidel.pdf">Žádost o posouzení zdravotní způsobilosti
+										k řízení </a>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="tabcontent" id="Predoperacni">
 						<p class="bold">Cílem předoperačního vyšetření je odborně posoudit Váš zdravotního stavu ve vztahu k plánované operaci a upozornit na možné rizika či komplikace.</p>
-						<p>Každou operaci indikuje specialista z chirurgických oborů (chirurg, specializovaný chirurg, urolog, ortoped). Ten vystaví žádanku na předoperační vyšetření. Tato žádanky by měla obsahovat operační diagnózu, charakter operačního zákroku a termín operace. Na předoperační vyšetření se objednejte prostřednictvím portálu sestry Emmy anebo na recepci. </p>
-						<p>Rozsah doporučených doplňujících vyšetřeních (EKG, RTG S + P) je proveden dle doporučených postupů (dostupné na www.ipvz.cz/vzdelavaci-akce/dokumenty/11088-2017-2018-doporuceny-postup-interniho-predoperacniho-vysetreni-mz-pdf ). Platnost předoperačního vyšetření je 4 týdny. Předoperační vyšetření provádí praktický lékař nebo internista. Pokud vyšetření provádí internista, provádí jej společně s odběrem krve. Vyšetření či odběry mimo rozsah stanovených v doporučení provádí specialista. </p>
+						<p>Každou operaci indikuje specialista z chirurgických oborů (chirurg, specializovaný chirurg, urolog, ortoped). Ten vystaví žádanku na předoperační vyšetření. Tato žádanky by měla obsahovat operační diagnózu, charakter operačního zákroku a termín operace.</p>
+						<p>Na předoperační vyšetření se objednejte prostřednictvím portálu sestry Emmy anebo na recepci. </p>
+						<button
+								onclick="window.open('https://moje.sestraemmy.cz/-/dumlekaru','_blank');"
+								type="button">
+									Kontaktovat sestru EMMY
+							</button>
+							<br>
+						<div class="text-container-white">
+							<p>Rozsah doporučených doplňujících vyšetřeních (EKG, RTG S + P) je proveden dle doporučených postupů (dostupné na <a href="www.ipvz.cz/vzdelavaci-akce/dokumenty/11088-2017-2018-doporuceny-postup-interniho-predoperacniho-vysetreni-mz-pdf" target="_blank">www.ipvz.cz/vzdelavaci-akce/dokumenty/11088-2017-2018-doporuceny-postup-interniho-predoperacniho-vysetreni-mz-pdf</a> ). </p>
+								<ul>
+									<li>Platnost předoperačního vyšetření je 4 týdny.</li>
+								</ul>
+								<p class="mb-0">Předoperační vyšetření provádí praktický lékař nebo internista. Pokud vyšetření provádí internista, provádí jej společně s odběrem krve. Vyšetření či odběry mimo rozsah stanovených v doporučení provádí specialista. </p>
+						</div>
 
 					</div>
 					<div class="tabcontent" id="Neschopnost">
+						<img src="assets/img/eneschopenka-fill.png" alt="e-neschopenka" style="border: none;">
 						<p class="bold">Pracovní neschopnost (e-neschopenku) vystavuje jakýkoliv lékař (praktický lékař, specialista, stomatolog), který zjistí a léči nemoc omezující schopnost pracovat. </p>
 						<p>Zákonem danou povinnost nelze delegovat na praktického lékaře od jiného specialisty. Praktický lékař vydává a vede pracovní neschopnost pouze na jemu kompetentní onemocnění. Z této povinnosti jsou vyňata zařízení záchranné a pohotovostní služby (LSPP). </p>
 						<p>Pokud Vám byla vystavena DPN, máte dle zákoníku práce povinnost toto neprodleně nahlásit Vašemu zaměstnavateli (mailem, telefonicky, osobně). Stejným způsobem budete informovat zaměstnavatele po kontrole zdravotního stavu o trvání DPN. Lékař Vám předá průkaz (list) dočasně práce neschopného pojištěnce. Do průkazu Vám vyznačuje termín další kontroly event. potvrzení o jejím trvání a také ukončení. Všechny ostatní dokumenty se zasílají sociální správě automaticky a to včetně tzv. lístku na peníze.  </p>
 						<p>Během pracovní neschopnosti může lékař rozhodnout o možnosti vycházek na základě Vašeho zdravotního stavu. Vycházky jsou možné mezi 7-19 hodinou s maximální dobou 6 hodin/den a to nejdříve od 3. dne trvání. Pacient v době mimo vycházek musí být na uvedené adrese (výjimkou je návštěva u lékaře na ošetření). Kontroly se provádějí pravidelně během celého týdne. Zákonem není stanovaný čas, ve kterém může kontrola přijít. Porušení režimu dočasně práceneschopného pojištěnce může vést ke zkrácení nebo odejmutí nemocenských dávek.</p>
+						<hr>
 						<p>Lékař má po 180 dnech trvání dočasné pracovní neschopnosti povinnost ukončit pracovní neschopnost, pokud je Vás zdravotní stav stabilizovaný (tudíž nemusíte být plně vyléčen/a).</p>
 						<p>Pokud ošetřující lékař po uplynutí 180 dnů DPN vyšetřením zjistí, že zdravotní stav pojištěnce je stabilizovaný a je předpoklad, že již nebude moci vykonávat dosavadní pracovní činnost, dočasnou pracovní neschopnost ukončí 30. kalendářním dnem po tomto zjištění.  Zaměstnavatel je povinen neprodleně zajistit lékařskou prohlídku u svého smluvního lékaře, který vystaví Posudek o zdravotní způsobilosti nebo nezpůsobilosti dočasně práce neschopného pojištěnce vykonávat dosavadní pracovní činnost.</p>
 
 					</div>
 					<div class="tabcontent" id="Lazne">
 						<p class="bold">Dle platné legislativy (zákon č. 48/1997 Sb., ve znění zákona č. 1/2015 Sb. a vyhláška č. 2/2015 Sb.) vypisuje žádost o léčebně lázeňskou péči (hrazenou pojišťovnou) navrhující lékař, specialista.</p>
-						<p>V případě nutnosti doplňujících informací o Vašem zdravotním stavu žádá revizní lékař dané pojišťovny o součinnost všeobecného praktického lékaře. U osob starších 70 let věku je nutné vyšetření internistou nebo geriatrem. K tomuto vyšetřením Vám vypíše žádanku navrhující lékař.  Návrh na příspěvkové lázeňskou péči vypisuje praktický lékař za úhradu (viz. ceník).</p>
+						<p>V případě nutnosti doplňujících informací o Vašem zdravotním stavu žádá revizní lékař dané pojišťovny o součinnost všeobecného praktického lékaře. U osob starších 70 let věku je nutné vyšetření internistou nebo geriatrem. K tomuto vyšetřením Vám vypíše žádanku navrhující lékař.  </p>
+						<p>Návrh na příspěvkové lázeňskou péči vypisuje praktický lékař za úhradu (viz. <a href="/cenik.html">ceník</a>).</p>
+						<img class="poskytovana-pece-img" src="assets/img/Lázně Libverda.jpg" alt="Lázně Libverda">
 					</div>
 					<div class="tabcontent" id="Ockovani">
-						<p class="bold">Očkování je lékařský zákrok, při kterém se do zdravého organismus záměrně aplikuje oslabená část viru nebo mikrobu.  Cílem tohoto zákroku je stimulovat zdravý organismus k vytvoření imunitní paměťové stopy. Očkování chrání před závažným průběhem nemoci. Náš zkušený kolektiv lékařů plně podporuje očkovací programy. U očkování, které není hrazeno ze zdravotního pojištění si zkontrolujte příspěvek Vaší pojišťovny. Cenu nehrazených vakcín účtujeme dle aktuálně platného ceníku distributora (https://www.ockovacicentrum.cz/cz/cenik).</p>
-						<p>K ceně vakcíny se doplácí poplatek za aplikaci, naskladnění a objednání (viz. ceník).</p> 
-						<p>Očkujeme pouze vakcíny od našeho distributora a námi uskladněné! Svůj požadavek na typ očkování zadejte přes sestru EMMY anebo na recepci. Pokud žádáte očkování před cestou do zdravotně rizikových a epidemiologicky obtížných oblastí, je lépe kontaktovat ambulanci cestovní medicíny FN Ostrava. </p>
+						<p class="bold">Očkování je lékařský zákrok, při kterém se do zdravého organismus záměrně aplikuje oslabená část viru nebo mikrobu.  Cílem tohoto zákroku je stimulovat zdravý organismus k vytvoření imunitní paměťové stopy. Očkování chrání před závažným průběhem nemoci.</p>
+							<p class="bold">Náš zkušený kolektiv lékařů plně podporuje očkovací programy. U očkování, které není hrazeno ze zdravotního pojištění si zkontrolujte příspěvek Vaší pojišťovny.</p> 
+						<div class="text-container-white">
+							<p>Cenu nehrazených vakcín účtujeme dle aktuálně platného ceníku distributora (<a href="https://www.ockovacicentrum.cz/cz/cenik" target="_blank">https://www.ockovacicentrum.cz/cz/cenik)</a>.</p>
+							<p>K ceně vakcíny se doplácí poplatek za aplikaci, naskladnění a objednání (viz. <a href="/cenik.html">ceník</a>).</p>
+							<ul>
+								<li>U očkování si zkontrolujte příspěvek Vaší pojišťovny. Cenu nehrazených vakcín účtujeme dle aktuálně platného ceníku distributora.</li>
+							</ul>
+						</div> 
+						<br>
+						<p>Očkujeme pouze vakcíny od našeho distributora a námi uskladněné! Svůj požadavek na typ očkování zadejte přes sestru EMMY anebo na recepci. Pokud žádáte očkování před cestou do zdravotně rizikových a epidemiologicky obtížných oblastí, je lépe kontaktovat <a href="https://www.fno.cz/oddeleni-pracovniho-a-preventivniho-lekarstvi/cestovni-medicina-a-ockovani" target="_blank">ambulanci cestovní medicíny FN Ostrava.</a></p>
 
+						<hr>
 
 						<p class="bold">V ordinaci očkujeme proti těmto nemocem:</p>
-						<p class="bold">Tetanus (Tetavax)</p>
-						<p>Tetanus je onemocnění způsobené toxiny baktérie Clostridium tetani. K nákaze může dojít při jakémkoliv poranění kůže a kontaktem s okolím. Děti jsou povinně očkovány pediatrem, praktický lékař v dospělosti očkování kontroluje a přeočkovává. Přeočkování u dospělých pacientů se provádí vždy po 10-15 letech (do 60 let věku 1 x 15 let, nad 60 let 1 x 10 let). Při krvavém poranění se přeočkuje, pokud od data očkování uplynulo více jak 5 let. Vakcína je k dispozici přímo v ordinaci a je hrazena pojišťovnou.</p>
-						<p class="bold">Chřipka (Vaxigrip tetra, Effluelda)</p>
-						<p>Chřipka je závažné virové respirační onemocnění. Očkuje se každoročně, vakcínou podle typu očekávaného původce viru. Nejohroženější skupinou jsou senioři nad 65 let a pacienti se závažnými nemoci jako cukrovkou, onemocněním plic, srdce, ledvin a imunitního systému. Očkováni se zahajuje většinou září a říjnu a obvykle se provádí do ledna. U pacientů s vybranými chorobami a nad 65 let vakcínu hradí pojišťovny. Ostatní klienti, kteří mají zájem o očkování, si vakcínu hradí jako samoplátci. Vakcína je každý rok k dispozici přímo v ordinaci. </p>
-						<p class="bold">Černý kašel (Adacel)</p>
-						<p>Černý kašel je vysoce infekční respirační bakteriální onemocnění. Očkuje se kombinovanou vakcínou proti společně s tetanem a záškrtem.  Doporučuje se aplikace posilující dávky proti černému kašli minimálně jednou v dospělosti všem jedincům do 65 let věku a také v graviditě s cílem chránit matku i dítě.  Očkování však není hrazeno ze zdravotního pojištění a je na objednávku.
-						<p class="bold">Pneumokok (Prevenar 20, Pneumovax 23)</p>
-						<p>Pneumokok je baktérie, která způsobuje závažná onemocnění jako zápal plic a zánět mozkových blan. U dětí se infekce často projeví jako zánět středního ucha. Pneumokoková infekce má zpravidla závažnější průběh u rizikových skupin u seniorů a pacientů s chronickým onemocněními (choroby srdce, plic, cukrovka, imunosupresivní léčba, kuřáci).  Infekce se šíří vzduchem.  Jelikož se pneumokok vyskytuje v několika podtypech, máme k dispozici několik očkovacích látek. Vakcína je hrazena pojištěncům nad 65 let věku.</p> 
-						<p class="bold">Klíšťová meningoencefalitida (FSME-IMMUN)</p>
-						<p>Klíšťová encefalitida je infekční virové onemocnění, které je přenášeno klíšťaty. Neexistuje na něj léčba jako např. u boreliózy (ATB). Nemoc se projevuje obdobnými příznaky jako chřipka. Následně poškozuje nervové struktury mozku a mozkových blan. Základní vakcína FSME-IMMUN se podává ve třech dávkách. Po úvodní dávce se podává 2.dávka za 1-3 měsíce, třetí dávka se aplikuje za 5-12 měsíců podruhé dávce. Ochranný účinek trvá 3–5 let, pak je nutné přeočkování. Očkovací látka je hrazena pojišťovnami u pacientů nad 50 let a vakcína je přímo k dispozici přímo v ordinaci. </p>
-						<p class="bold">Plané neštovice (Varilrix)</p>
-						<p>Plané neštovice jsou vysoce nakažlivě virové onemocnění postihující zejména děti (virus herpes zoster). Virus se přenáší dýchacími cestami a bližším kontaktem s nemocným. Po úvodní fázi nemoci (zvýšená teplota, únava) dochází k výsevu četných svědivých pupínků na celém těle.  Virus je nebezpečný zejména na počátku těhotenství. O očkování by se měly zajímat potencionální matky, ale také osoby s poruchou imunity, které nemoc dosud neprodělaly. Očkování není hrazeno ze zdravotního pojištění a je na objednávku.</p>
+						<ul>
+							<li class="expandable-item">
+								<div class="expand-toggle" type="button">
+									<p class="bold"><span class="arrow">▸</span> Tetanus (Tetavax)</p>
+								  </div>
+								<div class="expand-content">
+									<p>Tetanus je onemocnění způsobené toxiny baktérie Clostridium tetani. K nákaze může dojít při jakémkoliv poranění kůže a kontaktem s okolím. Děti jsou povinně očkovány pediatrem, praktický lékař v dospělosti očkování kontroluje a přeočkovává. Přeočkování u dospělých pacientů se provádí vždy po 10-15 letech (do 60 let věku 1 x 15 let, nad 60 let 1 x 10 let). Při krvavém poranění se přeočkuje, pokud od data očkování uplynulo více jak 5 let. Vakcína je k dispozici přímo v ordinaci a je hrazena pojišťovnou.</p>
+								</div>
+						  	</li>
+							<li class="expandable-item">
+								<div class="expand-toggle" type="button">
+									<p class="bold"><span class="arrow">▸</span> Chřipka (Vaxigrip tetra, Effluelda)</p>
+								  </div>
+								<div class="expand-content">
+									Chřipka je závažné virové respirační onemocnění. Očkuje se každoročně, vakcínou podle typu očekávaného původce viru. Nejohroženější skupinou jsou senioři nad 65 let a pacienti se závažnými nemoci jako cukrovkou, onemocněním plic, srdce, ledvin a imunitního systému. Očkováni se zahajuje většinou září a říjnu a obvykle se provádí do ledna. U pacientů s vybranými chorobami a nad 65 let vakcínu hradí pojišťovny. Ostatní klienti, kteří mají zájem o očkování, si vakcínu hradí jako samoplátci. Vakcína je každý rok k dispozici přímo v ordinaci.
+								</div>
+						  	</li>
+							<li class="expandable-item">
+								<div class="expand-toggle" type="button">
+									<p class="bold"><span class="arrow">▸</span> Černý kašel (Adacel)</p>
+								  </div>
+								<div class="expand-content">
+									Černý kašel je vysoce infekční respirační bakteriální onemocnění. Očkuje se kombinovanou vakcínou proti společně s tetanem a záškrtem.  Doporučuje se aplikace posilující dávky proti černému kašli minimálně jednou v dospělosti všem jedincům do 65 let věku a také v graviditě s cílem chránit matku i dítě.  Očkování však není hrazeno ze zdravotního pojištění a je na objednávku.								</div>
+						  	</li>
+							<li class="expandable-item">
+								<div class="expand-toggle" type="button">
+									<p class="bold"><span class="arrow">▸</span> Pneumokok (Prevenar 20, Pneumovax 23)</p>
+								  </div>
+								<div class="expand-content">
+									Pneumokok je baktérie, která způsobuje závažná onemocnění jako zápal plic a zánět mozkových blan. U dětí se infekce často projeví jako zánět středního ucha. Pneumokoková infekce má zpravidla závažnější průběh u rizikových skupin u seniorů a pacientů s chronickým onemocněními (choroby srdce, plic, cukrovka, imunosupresivní léčba, kuřáci).  Infekce se šíří vzduchem.  Jelikož se pneumokok vyskytuje v několika podtypech, máme k dispozici několik očkovacích látek. Vakcína je hrazena pojištěncům nad 65 let věku.
+								</div>
+						  	</li>
+							<li class="expandable-item">
+								<div class="expand-toggle" type="button">
+									<p class="bold"><span class="arrow">▸</span> Klíšťová meningoencefalitida (FSME-IMMUN)</p>
+								  </div>
+								<div class="expand-content">
+									Klíšťová encefalitida je infekční virové onemocnění, které je přenášeno klíšťaty. Neexistuje na něj léčba jako např. u boreliózy (ATB). Nemoc se projevuje obdobnými příznaky jako chřipka. Následně poškozuje nervové struktury mozku a mozkových blan. Základní vakcína FSME-IMMUN se podává ve třech dávkách. Po úvodní dávce se podává 2.dávka za 1-3 měsíce, třetí dávka se aplikuje za 5-12 měsíců podruhé dávce. Ochranný účinek trvá 3–5 let, pak je nutné přeočkování. Očkovací látka je hrazena pojišťovnami u pacientů nad 50 let a vakcína je přímo k dispozici přímo v ordinaci.								</div>
+						  	</li>
+							<li class="expandable-item">
+								<div class="expand-toggle" type="button">
+									<p class="bold"><span class="arrow">▸</span> Plané neštovice (Varilrix)</p>
+								  </div>
+								<div class="expand-content">
+									Plané neštovice jsou vysoce nakažlivě virové onemocnění postihující zejména děti (virus herpes zoster). Virus se přenáší dýchacími cestami a bližším kontaktem s nemocným. Po úvodní fázi nemoci (zvýšená teplota, únava) dochází k výsevu četných svědivých pupínků na celém těle.  Virus je nebezpečný zejména na počátku těhotenství. O očkování by se měly zajímat potencionální matky, ale také osoby s poruchou imunity, které nemoc dosud neprodělaly. Očkování není hrazeno ze zdravotního pojištění a je na objednávku.								</div>
+						  	</li>
+							<li class="expandable-item">
+								<div class="expand-toggle" type="button">
+									<p class="bold"><span class="arrow">▸</span>
+										Pásový opar (Shingrix)
+									</p>
+								  </div>
+								<div class="expand-content">
+									Pásový opar je velmi bolestivé infekční virové onemocnění, které postihuje zejména starší jedince nebo osoby s poruchou imunity. Původcem nemoci je virus herpes zoster, který se reaktivuje při oslabení imunity v rámci celoživotního nosičství po prodělání planých neštovic. Onemocnění se projeví výsevem jednostranných puchýřku v průběhu nervů hrudníku, bedrech nebo obličeji. Očkování není hrazeno ze zdravotního pojištění a je na objednávku.
+								</div>
+						  	</li>
+							<li class="expandable-item">
+								<div class="expand-toggle" type="button">
+									<p class="bold"><span class="arrow">▸</span>
+										RS Virus  (Abrysvo, Arexvy)
+									</p>
+								  </div>
+								<div class="expand-content">
+									Respirační syncitiální virus (RSV) je respirační virus, který se velmi rychle a snadno šíři kapénkovou infekcí a přímým kontaktem. Může způsobit závažné onemocnění plic i jiných orgánů. Rizikoví jsou senioři a osoby s poruchou imunity. Léčba je většinou symptomatická.  Očkování není hrazeno ze zdravotního pojištění a je na objednávku.
+								</div>
+						  	</li>
+							<li class="expandable-item">
+								<div class="expand-toggle" type="button">
+									<p class="bold"><span class="arrow">▸</span>
+										Žloutenka typu A (Havrix, Twinrix)
+									</p>
+								  </div>
+								<div class="expand-content">
+									Žloutenka typu A (nemoc špinavých rukou) je virové onemocnění postihující játra. Vyskytuje se na celém světě, zejména v zemích s nízkým hygienickým standardem. V České republice se může vyskytnou v menších epidemiích. Očkování se provádí ve dvou dávkách za úhradu (vakcína Havrix). Lze také provést očkování společně se žloutenkou typu B (Twinrix). Očkování není hrazeno ze zdravotního pojištění a je na objednávku.
+								</div>
+						  	</li>
+							<li class="expandable-item">
+								<div class="expand-toggle" type="button">
+									<p class="bold"><span class="arrow">▸</span>
+										Žloutenka typu B (Engerix, Twinrix)
+									</p>
+								  </div>
+								<div class="expand-content">
+									Žloutenka typu B je virové onemocnění postihující játra. Šíří se kontaktem s krví nebo jinými tělními tekutinami s infikovanou osobou. Očkování se provádí ve třech dávkách za úhradu samostatnou vakcínou (Engerix) anebo společnou vakcínou se žloutenkou typu A (Twinrix). Očkování se v dospělosti provádí za úhradu, v dětství je hrazeno pojišťovnou.
+								</div>
+						  	</li>
+							<li class="expandable-item">
+								<div class="expand-toggle" type="button">
+									<p class="bold"><span class="arrow">▸</span>
+										HPV infekce (anogenitální bradavice) (Gardasil)
+									</p>
+								  </div>
+								<div class="expand-content">
+									Anogenitální bradavice (kondylomata) jsou způsobeny HPV virem. Jedná se o měkké výstupky na kůži a sliznici v genitální oblasti.  Bradavice postihují ve stejné míře ženy i muže a k přenosu dochází mezi partnery kontaktem.  Některé podtypy HPV viru způsobují rozvoj rakoviny (rakovina děložního čípku). Očkování je účinnou prevencí před nákazou či komplikacemi nemoci v každém věku (Cervarix, Gardasil 9). Očkování není hrazeno ze zdravotního pojištění a je na objednávku.
+								</div>
+						  	</li>
+							<li class="expandable-item">
+								<div class="expand-toggle" type="button">
+									<p class="bold"><span class="arrow">▸</span>
+										Meningokok
+									</p>
+								  </div>
+								<div class="expand-content">
+									Meningokokové infekce jsou závažná bakteriální onemocnění, způsobující zánět mozkových blan nebo celkového hořečnaté onemocnění, otravu organismu a smrt. Nemoc má velmi často dramatický rychlý průběh a rizikoví jsou zejména mladší pacienti.  K infekci dojde kapénkami při blízkém kontaktu s nemocných nebo bacilonosičem. Existuje 13 typů bakterie meningokoka, proti nejrozšířenějším typům (A,B,C,W135, Y) byly vyvinuty účinné vakcíny. V České republice dominuje meningokok typu B. Od roku 2020 je součástí pravidelného očkovacího dětí. Od roku 2014 je v ČR k dispozici vakcína proti nejčastějšímu meningokoku skupiny B (BEXSERO). Pro cestovatele jsou pak nejvhodnější vícevalentní vakcíny (např. Nimentrix).
+								</div>
+						  	</li>
+							<li class="expandable-item">
+								<div class="expand-toggle" type="button">
+									<p class="bold"><span class="arrow">▸</span>
+										Břišní tyfus
+									</p>
+								  </div>
+								<div class="expand-content">
+									Břišní tyfus je život ohrožující infekční hořečnatě průjmovité onemocnění vyskytující se především v zemích s nízkým hygienickým standardem.  Původcem je baktérie Salmonella typhi a zdrojem nákazy je člověk přes kontaminovanou potravu a vodu.  Nejspolehlivější formou specifické ochrany je očkování.  Na očkování myslete včas před cestou do rizikové oblasti. Očkování není hrazeno ze zdravotního pojištění a je na objednávku.
+								</div>
+						  	</li>
+						</ul>
 						
-						<p class="bold">Pásový opar (Shingrix)</p>
-						<p>Pásový opar je velmi bolestivé infekční virové onemocnění, které postihuje zejména starší jedince nebo osoby s poruchou imunity. Původcem nemoci je virus herpes zoster, který se reaktivuje při oslabení imunity v rámci celoživotního nosičství po prodělání planých neštovic. Onemocnění se projeví výsevem jednostranných puchýřku v průběhu nervů hrudníku, bedrech nebo obličeji. Očkování není hrazeno ze zdravotního pojištění a je na objednávku.</p>
-						<p class="bold">RS Virus  (Abrysvo, Arexvy)</p>
-						<p>Respirační syncitiální virus (RSV) je respirační virus, který se velmi rychle a snadno šíři kapénkovou infekcí a přímým kontaktem. Může způsobit závažné onemocnění plic i jiných orgánů. Rizikoví jsou senioři a osoby s poruchou imunity. Léčba je většinou symptomatická.  Očkování není hrazeno ze zdravotního pojištění a je na objednávku.</p>
-						<p class="bold">Žloutenka typu A (Havrix, Twinrix)</p>
-						<p>Žloutenka typu A (nemoc špinavých rukou) je virové onemocnění postihující játra. Vyskytuje se na celém světě, zejména v zemích s nízkým hygienickým standardem. V České republice se může vyskytnou v menších epidemiích. Očkování se provádí ve dvou dávkách za úhradu (vakcína Havrix). Lze také provést očkování společně se žloutenkou typu B (Twinrix). Očkování není hrazeno ze zdravotního pojištění a je na objednávku.</p>
-						<p class="bold">Žloutenka typu B (Engerix, Twinrix)</p>
-						<p>Žloutenka typu B je virové onemocnění postihující játra. Šíří se kontaktem s krví nebo jinými tělními tekutinami s infikovanou osobou. Očkování se provádí ve třech dávkách za úhradu samostatnou vakcínou (Engerix) anebo společnou vakcínou se žloutenkou typu A (Twinrix). Očkování se v dospělosti provádí za úhradu, v dětství je hrazeno pojišťovnou.</p>
-						<p class="bold">HPV infekce (anogenitální bradavice) (Gardasil)</p>
-						<p>Anogenitální bradavice (kondylomata) jsou způsobeny HPV virem. Jedná se o měkké výstupky na kůži a sliznici v genitální oblasti.  Bradavice postihují ve stejné míře ženy i muže a k přenosu dochází mezi partnery kontaktem.  Některé podtypy HPV viru způsobují rozvoj rakoviny (rakovina děložního čípku). Očkování je účinnou prevencí před nákazou či komplikacemi nemoci v každém věku (Cervarix, Gardasil 9). Očkování není hrazeno ze zdravotního pojištění a je na objednávku.</p>
-						<p class="bold">Meningokok</p>
-						<p>Meningokokové infekce jsou závažná bakteriální onemocnění, způsobující zánět mozkových blan nebo celkového hořečnaté onemocnění, otravu organismu a smrt. Nemoc má velmi často dramatický rychlý průběh a rizikoví jsou zejména mladší pacienti.  K infekci dojde kapénkami při blízkém kontaktu s nemocných nebo bacilonosičem. Existuje 13 typů bakterie meningokoka, proti nejrozšířenějším typům (A,B,C,W135, Y) byly vyvinuty účinné vakcíny. V České republice dominuje meningokok typu B. Od roku 2020 je součástí pravidelného očkovacího dětí. Od roku 2014 je v ČR k dispozici vakcína proti nejčastějšímu meningokoku skupiny B (BEXSERO). Pro cestovatele jsou pak nejvhodnější vícevalentní vakcíny (např. Nimentrix).</p>
-						<p class="bold">Břišní tyfus</p>
-						<p>Břišní tyfus je život ohrožující infekční hořečnatě průjmovité onemocnění vyskytující se především v zemích s nízkým hygienickým standardem.  Původcem je baktérie Salmonella typhi a zdrojem nákazy je člověk přes kontaminovanou potravu a vodu.  Nejspolehlivější formou specifické ochrany je očkování.  Na očkování myslete včas před cestou do rizikové oblasti. Očkování není hrazeno ze zdravotního pojištění a je na objednávku.</p>
-						
-						<div class="live-wrapper4">
-							<div class="live-wrapper-inner"></div>
-						</div>
-						<p class="bold underline">Nabízíme veškeré očkovací programy v ČR. Zkontrolujte si stav svého očkování na EZ kartě.</p>
-						<p>Očkujeme na chřipku i COVID. K dispozici jsou rozšířené vakcíny na pneumokoka.  Informujte se na očkování pásového oparu a RS virů. Program očkování na virus klíšťové encefalitidy od 50. let. Stáhněte si aplikaci EZ karta. </p>
-						
-						<p>Očkování je lékařský zákrok, při kterém se do zdravého organismus záměrně aplikuje oslabená část viru nebo mikrobu. Cílem tohoto zákroku je stimulovat zdravý organismus k vytvoření imunitní paměťové stopy. Očkování chrání před závažným průběhem nemoci. Náš zkušený kolektiv lékařů plně podporuje očkovací programy. <span style="text-decoration: underline; font-weight: 600;">Nabízíme veškeré očkovací programy v ČR. Zkontrolujte si stav svého očkování na EZ kartě.</span></p>
-						<div class="live-wrapper4">
-							<div class="live-wrapper-inner"></div>
-						</div>
-						<p>U očkování si zkontrolujte příspěvek Vaší pojišťovny. Cenu nehrazených vakcín účtujeme dle aktuálně platného ceníku distributora.</p>
-						
+						<hr>
 
+						<p class="bold">Nabízíme veškeré očkovací programy v ČR. Zkontrolujte si stav svého očkování na EZ kartě.</p>
+						<p>Očkujeme na chřipku i COVID. K dispozici jsou rozšířené vakcíny na pneumokoka.  Informujte se na očkování pásového oparu a RS virů. Program očkování na virus klíšťové encefalitidy od 50. let.</p>
+						<p>Stáhněte si aplikaci EZ karta:</p>
+						<div class="store-badges">
+							<a href="https://play.google.com/store/apps/details?id=cz.nakit.eocko.wallet&pcampaignid=web_share" target="_blank" rel="noopener">
+							  <img src="assets/img/GetItOnGooglePlay_Badge_Web_color_Czech.png" alt="Stáhnout v Google Play" class="store-badge">
+							</a>
+							<a href="https://apps.apple.com/cz/app/ezkarta/id1568446392?l=cs" target="_blank" rel="noopener">
+								<img src="assets/img/download-on-the-app-store.svg" alt="Stáhnout v App Store" class="store-badge">
+							  </a>
+						  </div>
+						
 					</div>
+					
+					<div class="tabcontent" id="Chirurgie">
+						<p class="bold">Naše společnost poskytuje pro registrované pacienty možnost základní péče ve všeobecné chirurgii.</p>
+						<p>Provádíme běžné převazy, odstranění drobných kožních výrůstků, vytažení stehů i ambulantní drobné akutní zákroky.</p>
+						<p>Převazy jsou prováděny zkušenou chirurgickou sestrou po objednání.</p>
+						<p>Ostatní výkony jsou prováděny po domluvě s lékařem. Registrovaným pacientům poskytujeme základní konzultaci k operacím včetně možného anesteziologické stanoviska.</p>
+						<img class="poskytovana-pece-img" src="assets/img/prevazova-pece.jpg" alt="rovádíme běžné převazy">
+					</div>
+
 					<div class="tabcontent" id="Infuze">
 						<p class="bold">Infusní stacionář poskytuje možnost ambulantně absolvovat infuzní léčbu ordinovanou lékařem pod dohledem zdravotnického personálu.</p>
 						<p>Účinná látka je v injekční formě aplikovaná formou infúze nejčastěji ve formě několika sezení (nejčastěji 5-10x). Doba aplikace je přibližně 1-2 hodiny.</p>
 						<p>Součástí podání je pravidelné kontrola tlaku krve zdravotní sestrou. Některé léčiva jsou Vám vystavena formou receptu.</p>
-					</div>
-					<div class="tabcontent" id="Chirurgie">
-						<p class="bold">Naše společnost poskytuje pro registrované pacienty možnost základní péče ve všeobecné chirurgii.</p>
-						<p>Provádíme běžné převazy, odstranění drobných kožních výrůstků, vytažení stehů i ambulantní drobné akutní zákroky.</p>
-						<p>Převazy jsou prováděny zkušenou chirurgickou sestrou po objednání. Ostatní výkony jsou prováděny po domluvě s lékařem. Registrovaným pacientům poskytujeme základní konzultaci k operacím včetně možného anesteziologické stanoviska.</p>
+						<img class="poskytovana-pece-img" alt src="assets/img/infuzni-stacionar.JPG">
 					</div>
 
 					<div class="tabcontent" id="Firmy">
+						<p class="bold">Firemní péče</p>
 						<p>Cílem závodní preventivní péče je zabezpečit ve spolupráci se zaměstnavatelem prevenci, včetně ochrany zdraví zaměstnanců před nemocemi z povolání a jinými poškozeními zdraví z práce a prevenci úrazů. Firemní péči poskytujeme smluvním partnerům v plném rozsahu. V případě registrovaných pacientů můžeme provést pouze závodní prohlídky hodnocené kategorií 1 bez rizikových faktorů dle zákona. Neváhejte nás kontaktovat.</p>
 						<p>Zaměstnanci jsou povinni, podle zákoníku práce č.262/2006 v platném znění, podrobit se lékařským prohlídkám. Zaměstnavatel je dle Zákona 20/1966 Sb. O péči o zdraví lidu povinen zajistit zařízení závodně preventivní péče a je povinen sdělit zaměstnancům, o jaké zařízení jde. Zaměstnanec je povinen se podrobit pracovně lékařským prohlídkám, vyšetřením, očkováním. Volba zařízení závodní preventivní péče je plně v kompetenci zaměstnavatele a pro zaměstnance je vyjmuta ze svobodné volby lékaře.</p>
 						<p>Nabízíme několik možností péče o firemní klientelu – od základní závodní preventivní péče, vyžadované zákonnými předpisy, až po nadstandardní péči podle individuálních požadavků klienta. Čeká Vás příjemné moderní prostředí, profesionální přístup a kvalitní péče.</p>
 						<p>V rámci závodně preventivní péče jsme připraveni pro Vás zajistit tyto služby:</p>
-						<div class="prohlen-idie-ke-container">
-							<ul class="prohlen-idie-ke-sv-zdrav">
-								<li class="prohlen-idie-ke"> povinné vstupní a výstupní prohlídky </li>
-								<li class="lkask-prohldky-se"> poradní činnost v otázkách ochrany a podpory zdraví </li>
-								<li class="lkask-prohldky-se"> odborná kontrola pracovišť </li>
-								<li class="lkask-prohldky-se"> sledování vlivu práce a pracovních podmínek na zdravotní stav zaměstnanců</li>
-								<li class="lkask-prohldky-se"> preventivní prohlídky povinné dle platných právních předpisů a prohlídky vyžádané nad tento rámec zaměstnavatelem </li>
-								<li class="lkask-prohldky-se"> mimořádné a následné prohlídky ze zdravotních důvodů </li>
-								<li class="lkask-prohldky-se"> dispenzární prohlídky při nemocech z povolání </li>
-								<li class="lkask-prohldky-se"> organizování první pomoci a podíl na zdravotní výchově a výcviku zaměstnanců </li>
-								<li class="lkask-prohldky-se"> spolupráce s hygienickou službou </li>
-								<li class="lkask-prohldky-se"> účast na rozboru pracovní neschopnosti a pracovní úrazovosti </li>
-							</ul>
-						</div>
+						<ul>
+							<li> povinné vstupní a výstupní prohlídky </li>
+							<li > poradní činnost v otázkách ochrany a podpory zdraví </li>
+							<li > odborná kontrola pracovišť </li>
+							<li > sledování vlivu práce a pracovních podmínek na zdravotní stav zaměstnanců</li>
+							<li > preventivní prohlídky povinné dle platných právních předpisů a prohlídky vyžádané nad tento rámec zaměstnavatelem </li>
+							<li > mimořádné a následné prohlídky ze zdravotních důvodů </li>
+							<li > dispenzární prohlídky při nemocech z povolání </li>
+							<li > organizování první pomoci a podíl na zdravotní výchově a výcviku zaměstnanců </li>
+							<li > spolupráce s hygienickou službou </li>
+							<li > účast na rozboru pracovní neschopnosti a pracovní úrazovosti </li>
+						</ul>
 					</div>
 				</div>
 			</section>			
@@ -465,6 +582,13 @@
 					document.querySelector(".active").click();
 				});
 			};
+
+			document.querySelectorAll('.expand-toggle').forEach((toggle) => {
+				toggle.addEventListener('click', () => {
+				const item = toggle.closest('.expandable-item');
+				item.classList.toggle('active');
+				});
+			});
 		</script>
 		<script>var e = document.getElementById("image2"); e && e.addEventListener("click", function (e) { window.location.href = "./main-page-content.html" }); var t = document.getElementById("vodText"); t && t.addEventListener("click", function (e) { window.location.href = "./main-page-content.html" }); var o = document.getElementById("poskytovanPeText"); o && o.addEventListener("click", function () { var e = document.querySelector("[data-scroll-to='rowContainer']"); e && e.scrollIntoView({ block: "start", behavior: "smooth" }) }); var n = document.getElementById("domcPeText"); n && n.addEventListener("click", function (e) { window.location.href = "./dum-lekaru-domaci-pece.html" });</script>
 		<script>              

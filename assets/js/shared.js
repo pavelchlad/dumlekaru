@@ -104,32 +104,57 @@ function createModals() {
 }
 
 // Poskytovana pece - taby
-function openTab(evt, tabName) {
-	var i, tabcontent, tab;
-	tabcontent = document.getElementsByClassName("tabcontent");
-	for (i = 0; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = "none";
-	}
-	tab = document.getElementsByClassName("tab");
-	for (i = 0; i < tab.length; i++) {
-		tab[i].className = tab[i].className.replace(" active", "");
-	}
-	document.getElementById(tabName).style.display = "block";
-	evt.currentTarget.className += " active";
+function openTab(evt, tabName, userInitiated = false) {
+	const isMobile = window.matchMedia("(max-width: 750px)").matches;
+	const tabContents = document.getElementsByClassName("tabcontent");
+	const tabs = document.getElementsByClassName("tab");
+	const clickedTab = evt.currentTarget;
+	const content = document.getElementById(tabName);
+	const alreadyActive = clickedTab.classList.contains("active");
 
-	// Get the active tab and corresponding tab content
-	var activeTab = evt.currentTarget;
-	var activeTabContent = document.getElementById(tabName);
+	if (isMobile) {
+		// Toggle behavior on mobile
+		if (alreadyActive && userInitiated) {
+			clickedTab.classList.remove("active");
+			content.style.display = "none";
+			return;
+		}
 
-	// Mobile version: move tab content right below the active tab
-	var mq = window.matchMedia("(max-width: 750px)");
+		for (let i = 0; i < tabContents.length; i++) {
+			tabContents[i].style.display = "none";
+		}
+		for (let i = 0; i < tabs.length; i++) {
+			tabs[i].classList.remove("active");
+		}
 
-	if (mq.matches) {
-		activeTab.insertAdjacentElement('afterend', activeTabContent);
+		content.style.display = "block";
+		clickedTab.classList.add("active");
+
+		clickedTab.insertAdjacentElement("afterend", content);
+
+		if (userInitiated) {
+			setTimeout(() => {
+				clickedTab.scrollIntoView({ behavior: "smooth", block: "start" });
+			}, 100);
+		}
+
 	} else {
-		activeTab.parentElement.insertAdjacentElement('afterend', activeTabContent);
+		// Desktop: prevent closing the current tab
+		if (alreadyActive && userInitiated) return;
+
+		for (let i = 0; i < tabContents.length; i++) {
+			tabContents[i].style.display = "none";
+		}
+		for (let i = 0; i < tabs.length; i++) {
+			tabs[i].classList.remove("active");
+		}
+		content.style.display = "block";
+		clickedTab.classList.add("active");
+
+		clickedTab.parentElement.insertAdjacentElement("afterend", content);
 	}
 }
+
 
 function initCarousel() {
 	// Swiper
