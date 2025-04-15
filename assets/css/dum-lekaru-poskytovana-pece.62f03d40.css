@@ -268,13 +268,17 @@ li.expandable-item {
 
 .services {
 	margin-top: var(--padding-45xl);
-	padding: 0 var(--padding-xl)var(--padding-93xl);
+	padding: 0 var(--padding-xl) var(--padding-xl);
 	box-sizing: border-box;
 	text-align: left;
 	font-size: var(--font-size-base);
 	color: var(--color-black);
 	font-family: var(--font-inter);
 	align-self: stretch
+}
+
+.services-row {
+	padding-bottom: var(--padding-93xl);
 }
 
 .bute-bhem-dne,
@@ -347,7 +351,8 @@ li.expandable-item {
 		margin-top: -6px;
 	}
 
-	.tabcontent img.poskytovana-pece-img {
+	.tabcontent img.poskytovana-pece-img,
+	.image-23-icon {
         max-width: 250px;
     }
 }

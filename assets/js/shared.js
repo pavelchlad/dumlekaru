@@ -104,58 +104,84 @@ function createModals() {
 }
 
 // Poskytovana pece - taby
-function openTab(evt, tabName, userInitiated = false) {
-	const isMobile = window.matchMedia("(max-width: 750px)").matches;
-	const tabContents = document.getElementsByClassName("tabcontent");
-	const tabs = document.getElementsByClassName("tab");
-	const clickedTab = evt.currentTarget;
-	const content = document.getElementById(tabName);
-	const alreadyActive = clickedTab.classList.contains("active");
+function openTab(evt, tabName) {
+    const isMobile = window.matchMedia("(max-width: 750px)").matches;
+    const tabContents = document.getElementsByClassName("tabcontent");
+    const tabs = document.getElementsByClassName("tab");
+    const clickedTab = evt.currentTarget;
+    const content = document.getElementById(tabName);
+    const alreadyActive = clickedTab.classList.contains("active");
 
-	if (isMobile) {
-		// Toggle behavior on mobile
-		if (alreadyActive && userInitiated) {
-			clickedTab.classList.remove("active");
-			content.style.display = "none";
-			return;
-		}
+    if (isMobile) {
+        if (alreadyActive) {
+            clickedTab.classList.remove("active");
+            content.style.display = "none";
+            return;
+        }
 
-		for (let i = 0; i < tabContents.length; i++) {
-			tabContents[i].style.display = "none";
-		}
-		for (let i = 0; i < tabs.length; i++) {
-			tabs[i].classList.remove("active");
-		}
+        for (let i = 0; i < tabContents.length; i++) {
+            tabContents[i].style.display = "none";
+        }
+        for (let i = 0; i < tabs.length; i++) {
+            tabs[i].classList.remove("active");
+        }
 
-		content.style.display = "block";
-		clickedTab.classList.add("active");
+        content.style.display = "block";
+        clickedTab.classList.add("active");
 
-		clickedTab.insertAdjacentElement("afterend", content);
+        clickedTab.insertAdjacentElement("afterend", content);
 
-		if (userInitiated) {
-			setTimeout(() => {
-				clickedTab.scrollIntoView({ behavior: "smooth", block: "start" });
-			}, 100);
-		}
+        if (evt.detail > 0) {
+            setTimeout(() => {
+                clickedTab.scrollIntoView({ behavior: "smooth", block: "start" });
+            }, 100);
+        }
+    } else {
+        if (alreadyActive) return;
 
-	} else {
-		// Desktop: prevent closing the current tab
-		if (alreadyActive && userInitiated) return;
+        for (let i = 0; i < tabContents.length; i++) {
+            tabContents[i].style.display = "none";
+        }
+        for (let i = 0; i < tabs.length; i++) {
+            tabs[i].classList.remove("active");
+        }
 
-		for (let i = 0; i < tabContents.length; i++) {
-			tabContents[i].style.display = "none";
-		}
-		for (let i = 0; i < tabs.length; i++) {
-			tabs[i].classList.remove("active");
-		}
-		content.style.display = "block";
-		clickedTab.classList.add("active");
+        content.style.display = "block";
+        clickedTab.classList.add("active");
 
-		clickedTab.parentElement.insertAdjacentElement("afterend", content);
-	}
+        clickedTab.parentElement.insertAdjacentElement("afterend", content);
+    }
 }
 
-
+document.addEventListener('DOMContentLoaded', () => {
+	const hash = window.location.hash;
+	if (!hash) return;
+  
+	setTimeout(() => {
+	  const tabName = hash.substring(1);
+	  let targetTab = null;
+	  
+	  document.querySelectorAll('.tab').forEach((tab) => {
+		const onClickAttr = tab.getAttribute('onclick');
+		if (onClickAttr && onClickAttr.indexOf("'" + tabName + "'") !== -1) {
+		  targetTab = tab;
+		}
+	  });
+	  
+	  if (targetTab) {
+		const clickEvent = new MouseEvent('click', {
+		  bubbles: true,
+		  cancelable: true,
+		  view: window,
+		  detail: 1
+		});
+		
+		targetTab.dispatchEvent(clickEvent);
+	  }
+	}, 100);
+  });
+	
+  
 function initCarousel() {
 	// Swiper
 	const progressCircle = document.querySelector(".autoplay-progress svg");

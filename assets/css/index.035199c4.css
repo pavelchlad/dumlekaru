@@ -1833,11 +1833,11 @@
 }
 
 .swiper-button-prev {
-    left: 60px !important;
+    left: 30px !important;
 }
 
 .swiper-button-next {
-    right: 60px !important;
+    right: 30px !important;
 }
 
 .swiper-button-next:after,
@@ -1848,7 +1848,7 @@
 
 .autoplay-progress {
     position: absolute;
-    right: 65px;
+    right: 35px;
     bottom: 0;
     z-index: 10;
     width: 48px;
@@ -1857,7 +1857,7 @@
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color: var(--swiper-theme-color);
+    color: white;
     transform: scale(0.75);
 }
 
