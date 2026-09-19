@@ -32,6 +32,14 @@ Postupuj po etapách. Neotvírej další etapu jen proto, že je technicky zají
 5. Každou změnu ověř v rozsahu, který odpovídá riziku: validita odkazů a cest, načtení stránky, responzivita a případně kontrola konzole. Upravované obrázky vždy opatři smysluplným `alt`, nebo prázdným `alt`, jsou-li čistě dekorativní.
 6. Na závěr stručně uveď změněné soubory, dopad na web a provedené ověření. Pokud je něco jen návrh nebo nebylo ověřeno v prohlížeči, řekni to přímo.
 
+### Rychlé obsahové úpravy aktualit
+
+- Pro krátké provozní aktuality nejprve vyhledej nadpis nebo charakteristickou větu; sdílený obsah rolovacích polí je v `aktuality.html`.
+- Pokud uživatel výslovně žádá „vše vymazat a napsat tento text“, nahraď pouze obsah určeného textového bloku. Zachovej nadpis, pořadí slideů, třídy, obrázek, odkazy a okolní HTML, pokud jejich změnu uživatel nežádá.
+- Dodaný text přepisuj doslovně včetně české diakritiky. Jazykovou opravu, zkrácení nebo doplnění navrhuj jen tehdy, když o ni uživatel požádá nebo když text obsahuje zjevnou překážku srozumitelnosti.
+- U provozních a zdravotních sdělení nepřidávej vlastní tvrzení, data, podmínky úhrady ani doporučení. Nejasný údaj raději ověř dotazem.
+- Po změně ověř přítomnost nového textu, nepřítomnost nahrazeného textu a syntaktické chyby upraveného souboru. Pokud je dostupné místní zobrazení webu, ověř i načtení stránky, která fragment používá; jinak tuto mez výslovně uveď.
+
 ## Pravidla pro HTML, CSS a JavaScript
 
 - Používej sémantické HTML: `header`, `nav`, `main`, `section`, `article`, `footer`, správnou hierarchii nadpisů a skutečné odkazy či tlačítka podle jejich účelu.
