@@ -20,8 +20,8 @@ jobs:
     # Spustí se pouze v případě, že PR vytvořil Copilot agent / bot
     if: >
       !github.event.pull_request.draft &&
-      (contains(github.event.pull_request.user.login, 'copilot') ||
-      contains(github.event.pull_request.user.login, 'bot'))
+      (github.event.pull_request.user.login == 'Copilot' ||
+      endsWith(github.event.pull_request.user.login, '[bot]'))
     steps:
       - name: Automatické schválení Pull Requestu
         uses: hmarr/auto-approve-action@v4
