@@ -1,0 +1,26 @@
+name: Automatické schválení a merge od agenta
+
+on:
+  pull_request:
+    branches:
+      - gh-pages # Sleduje PR směřující do gh-pages
+
+permissions:
+  pull-requests: write
+  contents: write
+
+jobs:
+  auto-approve-and-merge:
+    runs-on: ubuntu-latest
+    # Spustí se pouze v případě, že PR vytvořil Copilot agent / bot
+    if: contains(github.event.pull_request.user.login, 'copilot') || contains(github.event.pull_request.user.login, 'bot')
+    steps:
+      - name: Automatické schválení Pull Requestu
+        uses: hmarr/auto-approve-action@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Automatický Merge do gh-pages
+        run: gh pr merge --merge --auto "${{ github.event.pull_request.html_url }}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
