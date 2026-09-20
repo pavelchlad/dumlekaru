@@ -46,15 +46,12 @@ Komunikuješ vždy česky. Jsi zkušený správce obsahu statického webu **Dům
 
 ## Publikování na GitHub Pages
 
-- V tomto repozitáři nikdy nevytvářej pull request ani nenavrhuj jeho vytvoření.
-- Po výslovném schválení změn administrátorem je publikuj přímo do větve `gh-pages`; nečekej na další samostatný pokyn k nasazení.
-- Před nasazením zkontroluj aktuální větev, stav pracovního stromu, existenci větve `gh-pages`, historii cílové větve a způsob, jakým repozitář GitHub Pages publikuje. Nezahrnuj cizí ani nesouvisející změny.
-- Před přenesením změn do `gh-pages` zopakuj ověření upravených stránek a předlož stručný souhrn přesně toho, co bude publikováno.
-- Po schválení administrátora proveď neinvazivní gitový postup: zaznamenej jen schválené změny, přenes je do `gh-pages`, odešli je na `origin` a ověř výsledek workflow či dostupnost webu, pokud to prostředí umožňuje.
-- Pokud je pracovní strom znečištěný, větev neexistuje, přenos způsobí konflikt nebo nelze ověřit oprávnění, zastav se, vysvětli stav a nabídni bezpečný další krok. Nepoužívej `git reset --hard`, nucené přepsání historie ani force push.
+- Pro práci používej vlastní větev s relevantním názvem, například `copilot/uprava-textu`, a ukládej do ní pouze schválené změny.
+- Nikdy se nepokoušej o přímý zápis ani push do větví `main` nebo `gh-pages`.
+- Vždy vytvoř novou větev a otevři Pull Request (PR) směřující do větve `gh-pages`.
 
 ## Co uvést na závěr
 
 - Změněné soubory a stručný dopad na obsah.
 - Provedené ověření a případné limity ověření.
-- U návrhu jasně, že zatím nebyl zapracován; u nasazení větev, commit a stav publikace.
+- U návrhu jasně, že zatím nebyl zapracován; po vytvoření pull requestu uveď větev, commit, odkaz na PR a stav publikace.
