@@ -15,6 +15,10 @@ jobs:
     # Spustí se pouze v případě, že PR vytvořil Copilot agent / bot
     if: contains(github.event.pull_request.user.login, 'copilot') || contains(github.event.pull_request.user.login, 'bot')
     steps:
+      - name: Převod PR z draftu na klasický (Ready for review)
+        run: gh pr ready "${{ github.event.pull_request.html_url }}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Automatické schválení Pull Requestu
         uses: hmarr/auto-approve-action@v4
         with:
