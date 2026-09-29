@@ -1,4 +1,4 @@
-function includeHTML() {
+function includeHTML(callback) {
 	var z, i, elmnt, file, xhttp;
 	/* Loop through a collection of all HTML elements: */
 	z = document.getElementsByTagName("*");
@@ -15,7 +15,7 @@ function includeHTML() {
 					if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
 					/* Remove the attribute, and call this function once more: */
 					elmnt.removeAttribute("w3-include-html");
-					includeHTML();
+					includeHTML(callback);
 				}
 			}
 			xhttp.open("GET", file, true);
@@ -23,6 +23,9 @@ function includeHTML() {
 			/* Exit the function: */
 			return;
 		}
+	}
+	if (typeof callback === "function") {
+		callback();
 	}
 }
 
@@ -88,7 +91,6 @@ function createModals() {
 	});
 
 	// Close modal on 'X' button click or when clicking outside the modal content
-
 	closeButtons.forEach(button => {
 		button.addEventListener('click', () => {
 			const modal = button.closest('.modal');
@@ -156,7 +158,7 @@ function openTab(evt, tabName) {
 document.addEventListener('DOMContentLoaded', () => {
 	const hash = window.location.hash;
 	if (!hash) return;
-  
+   
 	setTimeout(() => {
 	  const tabName = hash.substring(1);
 	  let targetTab = null;
@@ -181,12 +183,12 @@ document.addEventListener('DOMContentLoaded', () => {
 	}, 100);
   });
 	
-  
+
 function initCarousel() {
 	// Swiper
 	const progressCircle = document.querySelector(".autoplay-progress svg");
 	const progressContent = document.querySelector(".autoplay-progress span");
-		var swiper = new Swiper(".mySwiper", {
+	var swiper = new Swiper(".mySwiper", {
 		loop: true,
 		autoplay: {
 			delay: 15000,
