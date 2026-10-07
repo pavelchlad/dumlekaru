@@ -1,0 +1,10 @@
+{
+  "name": "dum-lekaru-html-validation",
+  "private": true,
+  "scripts": {
+    "validate:html": "node scripts/validate-html.mjs"
+  },
+  "devDependencies": {
+    "html-validate": "^11.16.2"
+  }
+}
